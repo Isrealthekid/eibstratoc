@@ -1,0 +1,1315 @@
+EIB STRATOC
+COMPLETE WEBSITE COPY | 2026 BROCHURE EDITION
+Website: https://eibstratoc.com
+
+======================================================================
+EDITORIAL GUIDE - NOT FOR PUBLICATION
+======================================================================
+
+This document provides proposed website copy based exclusively on the supplied
+21-page EIB STRATOC BROCHURE 2026 EDITION.pdf. Headlines, navigation labels,
+calls to action and form messages are newly written editorial copy. Company
+facts, services, project descriptions and figures come from the brochure.
+
+The live website could not be retrieved during this review. The structure below
+is a proposed website architecture, not a verified inventory of its current
+pages. No website files have been changed.
+
+HOW TO USE THIS DOCUMENT
+Part A: Shared navigation and footer.
+Part B: Complete homepage, in recommended display order.
+Part C: Supporting pages with expanded copy.
+Part D: Contact page and proposed form microcopy.
+Part E: Search engine titles and descriptions.
+Part F: Source references and editorial implementation notes.
+
+Labels such as "Eyebrow", "Heading", "Body" and "CTA" explain placement.
+Publish the text beneath the labels, not the labels themselves. CTA means
+call to action. Routes are proposed destinations, not existing verified URLs.
+Source notes and Part F belong in the editorial handover, not on the website.
+
+Recommended page structure:
+Home                         /
+About                        /about
+Services                 /services
+Intelligence Fusion          /services/intelligence-fusion
+Surveillance & Command       /services/surveillance-command
+Geospatial Intelligence      /services/geospatial-intelligence
+Satellite Infrastructure     /services/satellite-infrastructure
+Cybersecurity & Data Security /services/cybersecurity-data-security
+Operational Support          /services/operational-support
+Projects & Impact            /projects
+Safe Schools                 /safe-schools
+Contact                      /contact
+
+======================================================================
+PART A | SHARED NAVIGATION AND FOOTER
+======================================================================
+
+A1. HEADER / MAIN NAVIGATION
+
+Brand name:
+EIB STRATOC
+
+Primary navigation:
+Home
+About
+Services
+Projects & Impact
+Safe Schools
+Contact
+
+Services dropdown:
+Explore All Services
+Intelligence Fusion
+Surveillance & Command
+Geospatial Intelligence
+Satellite Infrastructure
+Cybersecurity & Data Security
+Operational Support
+
+Header action button:
+Discuss Your Requirements
+Destination: /contact
+
+Mobile navigation controls:
+Open menu
+Close menu
+Explore services
+Back to main menu
+
+A2. SHARED FOOTER
+
+Brand line:
+EIB STRATOC
+See. Understand. Act.
+
+Company summary:
+Integrated intelligence, surveillance and strategic operations supporting
+government, defence, security agencies and private-sector organisations.
+Protecting people, infrastructure and national assets through actionable
+intelligence and coordinated operational support.
+
+Column title: Explore
+Home
+About EIB STRATOC
+Projects & Impact
+Nigeria Safe Schools Project
+Contact
+
+Column title: Services
+Intelligence Fusion
+Surveillance & Command
+Geospatial Intelligence
+Satellite Infrastructure
+Cybersecurity & Data Security
+Operational Support
+
+Column title: Get in Touch
+Email: info@eibstratoc.com
+Website: www.eibstratoc.com
+
+Closing brand statement:
+Nigeria's intelligence advantage. Africa's security partner.
+
+Copyright line:
+Copyright [current year] EIB STRATOC Limited. All rights reserved.
+
+Editorial note:
+Resolve [current year] dynamically. Social account labels are transcribed in
+Part F; verified destination URLs are not supplied in the brochure. Privacy and
+terms links should point to separately prepared policies when those exist.
+
+======================================================================
+PART B | COMPLETE HOMEPAGE
+======================================================================
+
+B1. HERO
+
+Eyebrow:
+Intelligence. Surveillance. Strategic Operations.
+
+Main heading:
+See the threat. Understand the situation. Act with confidence.
+
+Supporting copy:
+EIB STRATOC brings real-time intelligence, aerial surveillance, geospatial
+insight, satellite communications and cybersecurity into one integrated
+service. We help government, defence, security agencies and private-sector
+organisations protect people, secure critical assets and make informed
+operational decisions.
+
+Primary CTA:
+Discuss Your Requirements
+Destination: /contact
+
+Secondary CTA:
+Explore Our Services
+Destination: /services
+
+Supporting brand line:
+Where intelligence meets action.
+
+Source: Brochure pages 2-3, 11 and 21.
+
+B2. SERVICE SNAPSHOT
+
+Section heading:
+Built for continuous intelligence. Equipped for national scale.
+
+Metric 1:
+24/7
+Continuous intelligence operations
+
+Metric 2:
+150,000+
+Schools monitored through the Nigeria Safe Schools Project Fusion Center
+
+Metric 3:
+200 racks
+Data centre capacity
+
+Metric 4:
+Nationwide
+Operational coverage across Nigeria
+
+Source: Brochure pages 2 and 18. Figures reflect the 2026 brochure.
+
+B3. ABOUT PREVIEW
+
+Eyebrow:
+About EIB STRATOC
+
+Heading:
+Turning complex information into decisive action.
+
+Body:
+EIB STRATOC is a Nigerian intelligence, surveillance and strategic operations
+company and the owner of the Briech Intelligence Fusion Center and Briech
+Satellites. Our services connect intelligence collection, analysis,
+communications and mission support to help decision makers understand what
+is happening and coordinate an informed response.
+
+From border security and energy infrastructure to education and community
+safety, we support the protection of lives, national assets and operational
+environments across Nigeria and beyond.
+
+CTA:
+Get to Know EIB STRATOC
+Destination: /about
+
+Source: Brochure pages 2-3, 6, 16 and 18.
+
+B4. SERVICES OVERVIEW
+
+Eyebrow:
+Our Services
+
+Heading:
+Connected services. One operational picture.
+
+Introduction:
+Bring intelligence, surveillance and response coordination together with
+services designed for complex security and operational environments.
+
+Card 1 title: Intelligence Fusion
+Copy: Combine satellite imagery, UAV feeds, human reporting, open-source
+intelligence and sensor data in a secure analytical environment. Identify
+emerging threats and turn multiple information streams into actionable insight.
+Link: Explore Intelligence Fusion
+Destination: /services/intelligence-fusion
+
+Card 2 title: Surveillance & Command
+Copy: Connect aerial surveillance, intelligent video, perimeter protection and
+command systems to support continuous monitoring and coordinated response.
+Link: Explore Surveillance & Command
+Destination: /services/surveillance-command
+
+Card 3 title: Geospatial Intelligence
+Copy: Understand incidents, terrain and resource deployment through interactive
+Story Maps, live GIS dashboards and detailed topographic mapping.
+Link: Explore Geospatial Intelligence
+Destination: /services/geospatial-intelligence
+
+Card 4 title: Satellite Infrastructure
+Copy: Support real-time data distribution and satellite image acquisition
+through our satellite teleport in Idu, Abuja, and our Strategic Operations
+Center.
+Link: Explore Satellite Infrastructure
+Destination: /services/satellite-infrastructure
+
+Card 5 title: Cybersecurity & Data Security
+Copy: Protect sensitive intelligence through a 200-rack Tier III data centre
+with integrated cybersecurity systems and digital forensics services.
+Link: Explore Cybersecurity & Data Security
+Destination: /services/cybersecurity-data-security
+
+Card 6 title: Operational Support
+Copy: Support defence, law enforcement and critical infrastructure operations
+with persistent surveillance, threat analysis, intelligence reporting and
+mission coordination.
+Link: Explore Operational Support
+Destination: /services/operational-support
+
+Source: Brochure pages 3-14 and 18-19.
+
+B5. INTELLIGENCE FUSION FEATURE
+
+Eyebrow:
+The Intelligence Fusion Centre
+
+Heading:
+Many sources. One clear picture.
+
+Body:
+Our Intelligence Fusion Centre collects, validates and correlates information
+from multiple sources in a central command environment. Analysts connect live
+surveillance, geographic data, field reports and intelligence streams to
+identify anomalies, assess threats and support timely operational decisions.
+
+Service points:
+- Integrated UAV, satellite, CCTV and sensor feeds.
+- Human, open-source and electronic intelligence.
+- Live geospatial mapping and operational dashboards.
+- Threat and risk assessments supported by continuous analysis.
+- Structured reports for commanders, agencies and strategic decision makers.
+
+Closing line:
+A shared intelligence environment for clearer understanding and coordinated
+action.
+
+CTA:
+Discover the Fusion Centre
+Destination: /services/intelligence-fusion
+
+Source: Brochure pages 4-5 and 8-11.
+
+B6. SECTORS AND ENVIRONMENTS
+
+Eyebrow:
+Where We Operate
+
+Heading:
+Protecting the environments that keep the nation moving.
+
+Introduction:
+Our surveillance and intelligence services support public safety,
+operational continuity and asset protection across critical sectors.
+
+Sector: Government, Defence & Public Safety
+Copy: Intelligence sharing, military ISR, operational coordination and mission
+support for government institutions, defence organisations and security agencies.
+
+Sector: Energy & Utilities Infrastructure
+Copy: Surveillance of petroleum and gas pipelines, oil and gas facilities,
+rights of way and strategic energy assets.
+
+Sector: Mining & Industrial Operations
+Copy: Mining concession surveillance, illegal mining detection, industrial
+facility monitoring and remote asset protection.
+
+Sector: Transport, Borders & Maritime Environments
+Copy: Monitoring for roads, railways, border areas, coastal environments and
+maritime security operations.
+
+Sector: Education & Communities
+Copy: School safety monitoring and intelligence support contributing to safer
+communities, commuter movement and trading routes.
+
+Sector: Construction & Public Assets
+Copy: Surveillance of construction activities, public assets and election
+activities to support situational awareness and security coordination.
+
+CTA:
+Discuss Your Operational Environment
+Destination: /contact
+
+Source: Brochure pages 6, 13-14, 16 and 18.
+
+B7. FEATURED NATIONAL PROJECT
+
+Eyebrow:
+Nigeria Safe Schools Project
+
+Heading:
+Supporting safer schools across Nigeria.
+
+Body:
+EIB STRATOC is the architect and operator of the Nigeria Safe Schools Project
+Fusion Center, hosted at the Nigeria Security and Civil Defence Corps (NSCDC)
+Headquarters. The national safety hub monitors more than 150,000 schools,
+strengthening situational awareness and emergency response for educational
+facilities across the country.
+
+Highlight:
+150,000+ schools monitored nationwide.
+
+CTA:
+Explore the Safe Schools Project
+Destination: /safe-schools
+
+Source: Brochure page 18.
+
+B8. PROJECTS AND OPERATIONAL IMPACT
+
+Eyebrow:
+Intelligence in Action
+
+Heading:
+Supporting the missions that protect national assets.
+
+Introduction:
+Our operational work combines aerial surveillance, intelligence analysis and
+command support across strategic infrastructure and security environments.
+
+Project 1 title: AKK Pipeline & Hydro Test Operations
+Copy: Continuous day and night aerial surveillance, proactive monitoring and
+real-time intelligence support have contributed to the protection of the AKK
+Gas Pipeline corridor and hydro test pipeline activities.
+
+Project 2 title: Mining & Economic Asset Protection
+Copy: Aerial intelligence and concession monitoring have supported the detection
+of illegal mining and law enforcement clearance operations, including arrests
+and the recovery of illegally mined materials.
+
+Project 3 title: Security Agency & Field Support
+Copy: Live operational monitoring and intelligence sharing have supported early
+threat detection, the defence of operational camps and coordination between UAV
+operators, analysts and ground forces.
+
+Project 4 title: Community Safety & Stability
+Copy: Intelligence-led surveillance has contributed to safer commuter movement,
+local community protection, increased farming activities and secure trading
+routes across multiple areas of responsibility.
+
+CTA:
+Explore Projects & Impact
+Destination: /projects
+
+Source: Brochure pages 13-17. These are brochure-reported examples, not new
+claims about results achieved after publication.
+
+B9. INFRASTRUCTURE FEATURE
+
+Eyebrow:
+The Infrastructure Behind the Intelligence
+
+Heading:
+Connected reach. Secure intelligence. Continuous operations.
+
+Body:
+Our Idu, Abuja satellite teleport supports real-time data distribution and
+satellite image acquisition across Nigeria and the African continent. A
+dedicated Strategic Operations Center brings satellite communications and
+geospatial intelligence into operational analysis and response.
+
+Our 200-rack Tier III data centre supports the management and protection of
+sensitive intelligence, with integrated cybersecurity and digital forensics
+services.
+
+CTA 1:
+Explore Satellite Infrastructure
+Destination: /services/satellite-infrastructure
+
+CTA 2:
+Explore Data Security
+Destination: /services/cybersecurity-data-security
+
+Source: Brochure pages 3 and 18.
+
+B10. COLLABORATION AND TRAINING
+
+Eyebrow:
+Strategic Collaboration
+
+Heading:
+Strengthening service through shared intelligence.
+
+Body:
+EIB STRATOC hosts strategic visits, operational demonstrations and knowledge
+exchange programmes for defence institutions, security agencies, government
+organisations, diplomatic representatives and industry partners.
+
+These engagements showcase indigenous intelligence services and integrated
+command systems while supporting collaboration in national and regional
+security. Ongoing training helps security personnel build practical skills in
+the use of advanced intelligence systems.
+
+CTA:
+Discuss Collaboration
+Destination: /contact
+
+Source: Brochure pages 10, 19 and 20.
+
+B11. FUTURE SERVICE
+
+Eyebrow:
+Advancing Connected Monitoring
+
+Heading:
+Extending intelligence through connected sensors.
+
+Body:
+EIB STRATOC is advancing the integration of Internet of Things technology to
+extend monitoring across facilities, infrastructure and operational
+environments. This next-generation development is intended to bring richer
+data, earlier warnings and faster response into the Fusion Centre.
+
+Editorial note:
+Retain the development language. Do not describe this planned expansion as a
+fully deployed nationwide IoT platform.
+
+Source: Brochure page 18.
+
+B12. HOMEPAGE CONTACT / CLOSING CTA
+
+Eyebrow:
+Contact EIB STRATOC
+
+Heading:
+Bring clarity to your next operational challenge.
+
+Body:
+Whether your priority is critical infrastructure protection, surveillance,
+intelligence coordination or mission support, discuss your requirements with
+EIB STRATOC.
+
+Primary CTA:
+Discuss Your Requirements
+Destination: /contact
+
+Secondary CTA:
+Email Our Team
+Destination: mailto:info@eibstratoc.com
+
+Visible contact detail:
+info@eibstratoc.com
+
+Closing line:
+See. Understand. Act.
+
+Source: Brochure pages 13, 19 and 21.
+
+======================================================================
+PART C | SUPPORTING PAGE COPY
+======================================================================
+
+C1. ABOUT EIB STRATOC
+Proposed route: /about
+
+Hero eyebrow:
+About EIB STRATOC
+
+Hero heading:
+Where intelligence meets action.
+
+Hero introduction:
+We connect intelligence, surveillance and strategic operations to help protect
+people, critical infrastructure and national assets.
+
+Section heading: Who We Are
+EIB STRATOC is a Nigerian intelligence, surveillance and strategic operations
+company serving government, defence, security and private-sector clients. As
+owners of the Briech Intelligence Fusion Center and Briech Satellites, we bring
+real-time intelligence, geospatial technologies, satellite communications,
+cybersecurity and mission support into an integrated operational service.
+
+Our platforms support safety, operational efficiency and national security
+efforts across Nigeria and beyond. We transform information from multiple
+sources into intelligence that helps decision makers anticipate threats and
+coordinate action.
+
+Section heading: Our Vision
+To serve as Nigeria's premier 24/7 centralised intelligence-sharing hub,
+promoting collaboration across public safety, defence and law enforcement
+agencies in support of national security and crime prevention.
+
+Section heading: Our Mission
+To anticipate, identify and mitigate security threats by delivering actionable
+intelligence and situational awareness while upholding the civil rights and
+freedoms of every individual.
+
+Section heading: Our Operational Foundation
+Our satellite teleport in Idu, Abuja, supports data distribution and satellite
+image acquisition across Nigeria and the African continent. The Strategic
+Operations Center combines satellite communication and geospatial intelligence
+tools to analyse security events and support operational response.
+
+The Intelligence Fusion Centre connects these services with surveillance,
+human reporting, cyber monitoring and advanced analytics. A dedicated data
+centre supports the secure management of sensitive intelligence.
+
+Section heading: Working Together for Stronger Security
+We support shared intelligence and coordinated operations across government,
+defence and security institutions. Through operational demonstrations,
+knowledge exchange and training, we help strengthen the use of intelligence
+systems and collaboration in national and regional security.
+
+Closing heading: Turn information into operational understanding.
+CTA: Explore Our Services
+Destination: /services
+Secondary CTA: Contact EIB STRATOC
+Destination: /contact
+
+Source: Brochure pages 2-3, 10-11, 18 and 20.
+
+----------------------------------------------------------------------
+
+C2. SERVICES OVERVIEW
+Proposed route: /services
+
+Hero eyebrow:
+Integrated Services
+
+Hero heading:
+From intelligence collection to coordinated response.
+
+Hero introduction:
+EIB STRATOC combines surveillance, analysis, communications and operational
+support to help teams understand threats, protect assets and act on reliable
+information.
+
+Section heading: Explore Our Services
+Use the six complete service cards in homepage section B4 here, with their
+respective links.
+
+Section heading: How Our Services Work Together
+
+Stage 1 title: Collect
+Copy: Bring together information from UAV surveillance, satellite imagery,
+video systems, field reports, intelligence sources and sensor networks.
+
+Stage 2 title: Validate & Analyse
+Copy: Correlate information, identify anomalies and assess threats, risks and
+operational conditions within the Intelligence Fusion Centre.
+
+Stage 3 title: Build Situational Awareness
+Copy: Present intelligence through GIS mapping, live dashboards and a shared
+command environment so teams can understand the operating picture.
+
+Stage 4 title: Inform & Coordinate
+Copy: Deliver intelligence reports and operational updates, share alerts and
+support coordination between decision makers and personnel in the field.
+
+Closing heading: Connect the services your mission requires.
+CTA: Discuss Your Requirements
+Destination: /contact
+
+Editorial note: The four-stage presentation is an editorial summary of the
+brochure's described activities, not a separately named company methodology.
+Source: Brochure pages 5, 7, 9-10 and 13-14.
+
+----------------------------------------------------------------------
+
+C3. INTELLIGENCE FUSION
+Proposed route: /services/intelligence-fusion
+
+Hero eyebrow:
+Intelligence Fusion & Analysis
+
+Hero heading:
+Turn multiple information streams into actionable intelligence.
+
+Hero introduction:
+Our Intelligence Fusion Centre connects collection, validation, analysis and
+reporting in a secure command environment, helping decision makers maintain
+situational awareness and respond to emerging threats.
+
+Section heading: Intelligence Sources, Connected
+The Centre combines UAV surveillance, Geographic Information Systems (GIS),
+CCTV and remote surveillance, Human Intelligence (HUMINT), Open Source
+Intelligence (OSINT), Electronic Intelligence (ELINT), satellite imagery,
+operational field reports, and sensor and IoT networks.
+
+Section heading: Threat Analysis
+Our analysts evaluate activities across operational environments to identify
+potential threats before they escalate. Areas of analysis include suspicious
+movement, patterns of life, hostile activity indicators, border activity,
+terrorism and insurgency indicators, civil unrest, and threats to pipelines
+and critical infrastructure.
+
+Section heading: Operational Risk Analysis
+Risk assessments consider security threats and operational vulnerabilities,
+equipment availability, infrastructure resilience, weather and environmental
+conditions, communication stability, power reliability and mission readiness.
+
+Section heading: Situational Awareness Around the Clock
+Continuous monitoring brings together drone operations, live surveillance,
+satellite imagery, geographic mapping, camp and facility status, national
+security events, infrastructure conditions and environmental factors.
+
+Section heading: Intelligence Products That Support Decisions
+- Daily Situation Reports (SITREPs).
+- Incident Reports and Operational Updates.
+- Threat and Risk Assessments.
+- Intelligence Briefs.
+- Infrastructure Status Reports.
+- Mission Support Reports.
+
+Section heading: A Shared Environment for Coordinated Action
+Large-format video walls, operational dashboards and collaborative intelligence
+workflows help personnel from multiple security organisations work from a
+shared picture. Mission-focused analysis turns live information into support
+for operational decisions.
+
+CTA: Discuss Intelligence Support
+Destination: /contact
+
+Source: Brochure pages 4-5 and 8-11.
+
+----------------------------------------------------------------------
+
+C4. SURVEILLANCE & COMMAND
+Proposed route: /services/surveillance-command
+
+Hero eyebrow:
+Surveillance, Protection & Coordination
+
+Hero heading:
+Maintain visibility. Detect threats. Coordinate response.
+
+Hero introduction:
+Connect intelligent video surveillance, layered perimeter protection and
+command systems to build a unified view of your operational environment.
+
+Section heading: Intelligent Video Surveillance
+Our surveillance architecture uses high-definition IP cameras across camps and
+facilities, supported by long-range surveillance systems, mobile platforms,
+infrared night-vision cameras, fixed cameras and pan-tilt-zoom cameras.
+Together, these technologies support monitoring across day and night conditions.
+
+Section heading: Layered Perimeter Protection
+Early warning begins at the perimeter. EIB STRATOC integrates complementary
+technologies to detect activity around protected environments:
+- Intelligent fence monitoring.
+- Motion detection sensors.
+- Fibre-optic intrusion detection.
+- Radar surveillance.
+- Thermal perimeter monitoring.
+- Ground vibration sensors.
+- Microwave barriers.
+- Infrared beam sensors.
+
+Section heading: Command & Control
+Our Command and Control Centre gives operators a unified view of the protected
+environment through GIS mapping, live camera management, centralised monitoring
+and video wall management. Incident and alarm management, resource tracking,
+operator dashboards and emergency coordination support informed response.
+
+Section heading: Communications That Connect Response Teams
+Integrated communications include VoIP and satellite systems, emergency call
+stations, public address systems, mass notification platforms, SMS and email
+alerts, and dedicated mobile security applications.
+
+Section heading: Monitoring Across Critical Environments
+Applications include borders, pipelines, oil and gas facilities, roads,
+railways, maritime and coastal environments, election activities and public
+assets.
+
+CTA: Discuss Surveillance Requirements
+Destination: /contact
+
+Source: Brochure pages 6-7.
+
+----------------------------------------------------------------------
+
+C5. GEOSPATIAL INTELLIGENCE
+Proposed route: /services/geospatial-intelligence
+
+Hero eyebrow:
+Geospatial Intelligence
+
+Hero heading:
+Turn location data into operational understanding.
+
+Hero introduction:
+Our GIS solutions help security teams understand incidents, track movement,
+assess terrain and make informed decisions on the ground.
+
+Section heading: Story Maps - Intelligence in Context
+Interactive Story Maps bring timelines, incident patterns and response actions
+into a clear visual narrative. They help commanders understand what happened,
+where it happened and why it matters, while supporting briefings, training and
+stakeholder communication.
+
+Section heading: Live Dashboards - One View of the Situation
+GIS dashboards consolidate surveillance feeds, patrol data, alerts and
+resources. Analysts can monitor hotspots, asset deployment, response times,
+coverage gaps and active threats through a shared live view.
+
+Section heading: Topographic Mapping - Understand the Terrain
+EIB STRATOC has produced detailed topographic maps with contour data for key
+Local Government Areas in Plateau State, including Bassa, Qua'an Pan, Barkin
+Ladi, Riyom and Mangu, where its camps are located. These maps reveal elevation,
+slopes, access routes and natural barriers.
+
+Application: Camp Planning
+Identify high ground, drainage patterns and access points.
+
+Application: Patrol Routing
+Use terrain information to support safer, more efficient route planning.
+
+Application: Risk Assessment
+Assess potential ambush locations, flood zones and movement corridors.
+
+Closing copy:
+By combining Story Maps, live dashboards and terrain analysis, we help teams
+connect location, activity and operational context.
+
+CTA: Discuss Geospatial Support
+Destination: /contact
+
+Source: Brochure pages 11-12.
+
+----------------------------------------------------------------------
+
+C6. SATELLITE INFRASTRUCTURE
+Proposed route: /services/satellite-infrastructure
+
+Hero eyebrow:
+Satellite & Intelligence Infrastructure
+
+Hero heading:
+Connect satellite reach with operational insight.
+
+Hero introduction:
+Our satellite infrastructure supports the movement of intelligence from data
+acquisition to operational analysis across Nigeria and the African continent.
+
+Section heading: Our Idu, Abuja Satellite Teleport
+EIB STRATOC operates a satellite teleport at its Idu, Abuja facility. This
+infrastructure supports real-time data distribution and satellite image
+acquisition, helping clients understand their operational environments.
+
+Section heading: Strategic Operations Center
+Advanced satellite communications and geospatial intelligence tools support
+the analysis of security events and coordination of response. These
+services connect satellite information with ground-level operational needs.
+
+Section heading: Part of an Integrated Intelligence Service
+As owners of Briech Satellites and the Briech Intelligence Fusion Center,
+EIB STRATOC brings satellite services together with surveillance,
+intelligence analysis and command support.
+
+CTA: Discuss Satellite Support
+Destination: /contact
+
+Source: Brochure pages 2-3 and 18. No satellite counts, orbit specifications,
+imagery resolution, launch history or bandwidth commitments are provided.
+
+----------------------------------------------------------------------
+
+C7. CYBERSECURITY & DATA SECURITY
+Proposed route: /services/cybersecurity-data-security
+
+Hero eyebrow:
+Data Security & Cyber Watch
+
+Hero heading:
+Protect the intelligence behind every decision.
+
+Hero introduction:
+Sensitive intelligence depends on the infrastructure that stores, manages and
+protects it. EIB STRATOC combines dedicated data centre infrastructure with
+cybersecurity and digital forensics services.
+
+Section heading: Infrastructure for Sensitive Intelligence
+Our 200-rack Tier III data centre supports the management and protection of
+sensitive intelligence. Integrated cybersecurity systems and digital forensics
+services form part of this operational foundation.
+
+Section heading: Facility Credentials
+- Tier III certified.
+- ISO certified.
+- Uptime Institute certified.
+- NITDA compliant.
+- 200-rack capacity.
+
+Section heading: Cybersecurity & Digital Forensics
+Cybersecurity and digital forensics services complement the broader
+intelligence service, supporting the protection and analysis of digital
+information within strategic operations.
+
+CTA: Discuss Data Security Requirements
+Destination: /contact
+
+Editorial note: The credentials above reproduce the brochure's descriptions.
+It does not identify an ISO standard number, certificate reference, expiry date
+or certification scope. Do not add these details or infer commercial hosting,
+penetration testing, managed SOC packages or an uptime service-level agreement.
+Source: Brochure page 18.
+
+----------------------------------------------------------------------
+
+C8. OPERATIONAL SUPPORT
+Proposed route: /services/operational-support
+
+Hero eyebrow:
+National Projects & Mission Support
+
+Hero heading:
+Intelligence that supports action in the field.
+
+Hero introduction:
+EIB STRATOC supports government institutions, defence and security agencies,
+and private-sector organisations responsible for protecting critical assets.
+We combine intelligence collection, aerial surveillance, threat monitoring
+and operational coordination to strengthen situational awareness and decisions.
+
+Section heading: Critical Infrastructure Protection
+Support covers oil and gas pipeline surveillance, mining and mineral asset
+security, right-of-way monitoring, construction project security, industrial
+facility surveillance and remote asset monitoring.
+
+Section heading: Military Intelligence, Surveillance & Reconnaissance
+Our ISR services include persistent aerial surveillance, battlefield
+intelligence support, route reconnaissance and force protection, target area
+monitoring, mission overwatch and tactical intelligence dissemination.
+
+Section heading: Support for Security Agencies
+We support intelligence sharing and threat identification, search and clearance
+activities, operational coordination, command and control, live monitoring and
+incident reporting. This connects analysts, UAV operators and personnel on the
+ground around a shared operational picture.
+
+Section heading: Core Intelligence Services
+- Around-the-clock access to critical intelligence.
+- Tracking of sensitive human and equipment assets.
+- Ongoing training for security personnel.
+- Nationwide search and rescue coordination.
+- Support for terrorist risk assessments.
+
+Section heading: Strategic National Support
+The brochure describes a Special Activity Center in Abuja, collaboration with
+security agencies across Nigeria, digital forensics and cybersecurity services,
+military ISR missions and classified satellite support for defence operations.
+
+CTA: Discuss Mission Support
+Destination: /contact
+
+Source: Brochure pages 13-14 and 18-19.
+
+----------------------------------------------------------------------
+
+C9. PROJECTS & IMPACT
+Proposed route: /projects
+
+Hero eyebrow:
+Projects & Operational Impact
+
+Hero heading:
+Intelligence supporting national security and economic resilience.
+
+Hero introduction:
+From energy corridors to mining operations and local communities, EIB STRATOC
+combines surveillance, analysis and coordination to support the protection of
+people and strategic assets.
+
+Section heading: AKK Gas Pipeline & Hydro Test Activities
+Continuous day and night aerial surveillance, proactive monitoring and
+real-time intelligence support have contributed to the protection of the AKK
+Gas Pipeline corridor and hydro test pipeline activities.
+
+Result statement:
+The 2026 brochure reports no major security breaches across several operational
+sectors during the six-month period it describes.
+
+Section heading: Mining Concessions & Illegal Mining Detection
+Mining concession surveillance and aerial intelligence have supported the
+detection and disruption of illegal mining. The brochure records support for
+law enforcement clearance operations resulting in arrests and the recovery
+of illegally mined materials.
+
+Section heading: Camp Defence & Security Operations
+Intelligence support has contributed to early threat detection, coordinated
+field response and the protection of operational camps. The brochure records
+the successful defence of a camp in Niger State during a coordinated armed
+attack, alongside improved coordination between UAV operators, analysts and
+ground forces.
+
+Section heading: Community Safety & Stability
+Across multiple areas of responsibility, intelligence-led surveillance has
+contributed to safe commuter movement, local community protection, increased
+farming activities, secure trading routes and public confidence. Continuous
+monitoring of high-risk locations supports these broader community outcomes.
+
+Section heading: National School Safety
+EIB STRATOC designed and operates the Nigeria Safe Schools Project Fusion
+Center at NSCDC Headquarters, monitoring more than 150,000 schools nationwide.
+Link: Explore the Safe Schools Project
+Destination: /safe-schools
+
+Section heading: The Value of Integrated Operational Support
+- Stronger situational awareness.
+- Support for faster operational decisions.
+- Protection of strategic infrastructure.
+- Support for military and law enforcement missions.
+- Reduced operational risk.
+- Protection of lives, assets and critical investments.
+
+Closing heading: Discuss the assets and operations you need to protect.
+CTA: Contact EIB STRATOC
+Destination: /contact
+
+Source: Brochure pages 13-18. Preserve attribution on time-bound results.
+
+----------------------------------------------------------------------
+
+C10. NIGERIA SAFE SCHOOLS PROJECT
+Proposed route: /safe-schools
+
+Hero eyebrow:
+The Nigeria Safe Schools Project
+
+Hero heading:
+Protecting the nation's future through connected intelligence.
+
+Hero introduction:
+EIB STRATOC is the architect and operator of the Nigeria Safe Schools Project
+Fusion Center, a national safety hub supporting the monitoring of more than
+150,000 schools across Nigeria.
+
+Highlight:
+150,000+ schools monitored nationwide.
+
+Section heading: A National Hub for School Safety
+Hosted at the Nigeria Security and Civil Defence Corps Headquarters, the Fusion
+Center brings school safety monitoring into a national intelligence environment
+to strengthen situational awareness and emergency response for educational
+facilities.
+
+Section heading: EIB STRATOC's Role
+As architect and operator, EIB STRATOC provides the Fusion Center service
+behind the project, connecting national-scale monitoring with intelligence
+support for school safety.
+
+Section heading: Better Awareness for Educational Environments
+The project supports a clearer understanding of school security conditions
+and stronger emergency response through its national monitoring hub.
+
+Closing heading: Learn more about our school safety service.
+CTA: Contact EIB STRATOC
+Destination: /contact
+
+Editorial note: The brochure does not provide enrolment instructions, school
+eligibility rules, emergency telephone numbers, camera counts, response-time
+guarantees or a public incident-reporting portal. Do not invent those features.
+Source: Brochure page 18.
+
+======================================================================
+PART D | CONTACT PAGE, FAQ AND FORM COPY
+======================================================================
+
+D1. CONTACT PAGE
+Proposed route: /contact
+
+Hero eyebrow:
+Contact EIB STRATOC
+
+Hero heading:
+Let's discuss what you need to protect.
+
+Hero introduction:
+Tell us about your intelligence, surveillance or operational support
+requirements. Start a conversation about the services relevant to your
+organisation, assets and operating environment.
+
+Contact block title:
+Email Our Team
+
+Email:
+info@eibstratoc.com
+
+Email button:
+Send an Email
+Destination: mailto:info@eibstratoc.com
+
+Website:
+www.eibstratoc.com
+
+Location context:
+Our satellite teleport is located at our Idu, Abuja facility, Nigeria.
+
+Editorial note: This is a facility location, not a complete visitor or postal
+address. Do not label it as a walk-in office or add a map pin without an exact
+verified address. The brochure provides no telephone number or enquiry hours.
+
+D2. PROPOSED ENQUIRY FORM
+
+Form heading:
+Tell Us About Your Requirements
+
+Form introduction:
+Share a brief overview of your organisation and the support you are seeking.
+
+Field 1 label: Full name
+Placeholder: Enter your full name
+Required: Yes
+
+Field 2 label: Organisation
+Placeholder: Enter your organisation's name
+Required: Yes
+
+Field 3 label: Email address
+Placeholder: Enter your email address
+Required: Yes
+
+Field 4 label: Phone number
+Placeholder: Include your country code
+Required: No
+
+Field 5 label: Area of interest
+Placeholder: Select an area of interest
+Required: Yes
+Options:
+Intelligence Fusion
+Surveillance & Command
+Geospatial Intelligence
+Satellite Infrastructure
+Cybersecurity & Data Security
+Operational Support
+Safe Schools
+Training & Strategic Collaboration
+General Enquiry
+
+Field 6 label: Your requirements
+Placeholder: Briefly describe your operational environment and the support
+you would like to discuss.
+Required: Yes
+
+Required-fields note:
+Fields marked with an asterisk are required.
+
+Submit button:
+Send Enquiry
+
+Sending state:
+Sending your enquiry...
+
+Success heading:
+Your enquiry has been received.
+
+Success message:
+Thank you for contacting EIB STRATOC.
+
+General error message:
+Your enquiry could not be sent. Please try again or email info@eibstratoc.com.
+
+Required-field error:
+Please complete this field.
+
+Email validation error:
+Please enter a valid email address.
+
+Editorial note: This is proposed interface copy, not evidence of an existing
+working form. Show the success message only after confirmed submission. No
+reply-time promise, secure-upload claim or data-retention policy is assumed.
+
+D3. FREQUENTLY ASKED QUESTIONS
+
+Section heading:
+Understand Our Services
+
+Question: What does EIB STRATOC do?
+Answer: EIB STRATOC provides intelligence, surveillance and strategic operations
+support, combining real-time intelligence, geospatial technologies, satellite
+communications, cybersecurity and mission support.
+
+Question: Which organisations does EIB STRATOC support?
+Answer: We support government institutions, defence and security agencies,
+and private-sector organisations, including those responsible for critical
+infrastructure and strategic assets.
+
+Question: What is the Intelligence Fusion Centre?
+Answer: It is a central command and analytical environment where information
+from surveillance systems, satellite imagery, intelligence sources, field
+reports and sensor networks is collected, validated and correlated to support
+decisions and operational response.
+
+Question: Does EIB STRATOC provide continuous monitoring?
+Answer: The brochure describes 24/7 intelligence operations and continuous
+situational awareness across monitored operational environments.
+
+Question: How does GIS support security operations?
+Answer: Story Maps explain incidents and response actions, live dashboards
+bring operational information into one view, and topographic maps support
+terrain assessment, camp planning and patrol routing.
+
+Question: What is EIB STRATOC's role in the Nigeria Safe Schools Project?
+Answer: EIB STRATOC is the architect and operator of the project's Fusion
+Center at NSCDC Headquarters. The hub monitors more than 150,000 schools
+across Nigeria.
+
+Question: Does EIB STRATOC provide training?
+Answer: Yes. The brochure describes ongoing training for security personnel
+and skills development in the use of advanced intelligence systems.
+
+Question: How can I contact EIB STRATOC?
+Answer: Email info@eibstratoc.com to discuss your requirements.
+
+Source: Brochure pages 2, 5, 9-14 and 18-21.
+
+======================================================================
+PART E | SEARCH ENGINE TITLES AND DESCRIPTIONS
+======================================================================
+
+HOME
+Title: EIB STRATOC | Intelligence, Surveillance & Operations
+Description: Integrated intelligence, surveillance, GIS, satellite communications
+and operational support for government, defence and private-sector organisations.
+
+ABOUT
+Title: About EIB STRATOC | Intelligence into Action
+Description: Learn how EIB STRATOC connects intelligence, surveillance and mission
+support to protect people, critical infrastructure and national assets.
+
+SERVICES
+Title: Integrated Intelligence Services | EIB STRATOC
+Description: Explore intelligence fusion, surveillance, GIS, satellite
+infrastructure, cybersecurity and operational support from EIB STRATOC.
+
+INTELLIGENCE FUSION
+Title: Intelligence Fusion & Analysis | EIB STRATOC
+Description: Connect intelligence sources, threat analysis, risk assessment and
+24/7 situational awareness through EIB STRATOC's Intelligence Fusion Centre.
+
+SURVEILLANCE & COMMAND
+Title: Surveillance & Command Systems | EIB STRATOC
+Description: Explore intelligent video surveillance, perimeter protection,
+command and control, and integrated communications for security operations.
+
+GEOSPATIAL INTELLIGENCE
+Title: Geospatial Intelligence & GIS | EIB STRATOC
+Description: Turn location data into operational insight with Story Maps, live
+GIS dashboards and topographic mapping from EIB STRATOC.
+
+SATELLITE INFRASTRUCTURE
+Title: Satellite & Intelligence Infrastructure | EIB STRATOC
+Description: Discover EIB STRATOC's Idu, Abuja satellite teleport supporting
+real-time data distribution, satellite image acquisition and intelligence.
+
+CYBERSECURITY & DATA SECURITY
+Title: Cybersecurity & Data Security | EIB STRATOC
+Description: Explore EIB STRATOC's 200-rack Tier III data centre, integrated
+cybersecurity systems and digital forensics services.
+
+OPERATIONAL SUPPORT
+Title: Operational & Mission Support | EIB STRATOC
+Description: Intelligence, aerial surveillance and coordination supporting
+critical infrastructure, defence, security agencies and strategic operations.
+
+PROJECTS & IMPACT
+Title: Projects & Operational Impact | EIB STRATOC
+Description: Explore EIB STRATOC's brochure-reported work in pipeline protection,
+mining security, field support, community safety and national school monitoring.
+
+SAFE SCHOOLS
+Title: Nigeria Safe Schools Project | EIB STRATOC
+Description: Learn about the EIB STRATOC-operated Safe Schools Project Fusion
+Center at NSCDC Headquarters, monitoring over 150,000 schools across Nigeria.
+
+CONTACT
+Title: Contact EIB STRATOC | Discuss Your Requirements
+Description: Contact EIB STRATOC to discuss intelligence, surveillance, geospatial,
+satellite, cybersecurity and operational support requirements.
+
+======================================================================
+PART F | SOURCE MAP AND EDITORIAL NOTES - NOT FOR PUBLICATION
+======================================================================
+
+F1. BROCHURE SOURCE MAP
+
+Page references below refer to PDF page positions, beginning with the cover.
+
+Page 1: EIB STRATOC Limited cover and brand identity.
+Page 2: Company overview; BIFC and Briech Satellites ownership; 24/7 operations;
+        150,000+ schools; 200-rack Tier III data centre; nationwide coverage.
+Page 3: Satellite teleport at Idu, Abuja; Strategic Operations Center; vision
+        and mission, including civil rights and individual freedoms.
+Page 4: Classified Intelligence Fusion Center and intelligence disciplines.
+Page 5: Fusion Centre collection, validation, correlation and nine source types.
+Page 6: Monitored sectors; video surveillance; perimeter protection introduction.
+Page 7: Perimeter technologies; command and control; integrated communications.
+Page 8: Threat analysis categories.
+Page 9: Risk analysis; 24/7 situational awareness; six intelligence report types.
+Page 10: Integrated operations; shared command environment; analytics; training.
+Page 11: Fusion Centre summary; geospatial intelligence; Story Maps.
+Page 12: GIS dashboards; Plateau State mapping; planning and risk applications.
+Page 13: Critical infrastructure; AKK and hydro test support; military ISR;
+         six-month operational result statement.
+Page 14: Security agency support; economic assets; field coordination.
+Page 15: Pipeline project photographs without additional extracted body copy.
+Page 16: Community outcomes and operational achievements, including Niger State.
+Page 17: Operational impact and integrated support summary.
+Page 18: Safe Schools; data centre credentials; developing IoT service;
+         strategic national support.
+Page 19: Core intelligence services; asset tracking; training; search and rescue.
+Page 20: Strategic engagements, delegations and knowledge exchange.
+Page 21: Brand closing statement, website, email and social account labels.
+
+F2. CONTACT NORMALISATION
+
+Publish email as: info@eibstratoc.com
+Publish website as: www.eibstratoc.com
+
+The website line contains a trailing mark in the PDF. It is omitted here; the
+domain agrees with the user's stated website. Email and website icon placement
+in the brochure should not override the actual contact strings.
+
+Social labels as printed in the brochure:
+Facebook: Eib Stractoc SAC
+X: @EIBstractocSAC
+Instagram: eibstractorsac
+TikTok: eibstractocsac_
+
+These spellings differ from the company name. Preserve them as source
+transcriptions until their account destinations are checked. Do not silently
+change the handles or fabricate links.
+
+F3. CLAIMS AND SCOPE
+
+1. All numerical and project claims are sourced to the 2026 brochure; they
+   have not been independently updated to the website's publication date.
+2. The 150,000+ figure describes schools monitored through the Safe Schools
+   Project Fusion Center. It does not establish that EIB installed cameras at
+   every school or guarantee protection from every incident.
+3. The 200-rack figure describes capacity, not occupied racks or client count.
+4. The six-month pipeline result has no exact date range in the brochure.
+   Keep the historical attribution used in C9; do not recast it as the most
+   recent six months or a permanent zero-breach guarantee.
+5. Existing sensor and IoT inputs are described on page 5. The broader
+   next-generation IoT expansion on page 18 remains a development initiative.
+6. The brochure does not specify which ISO standard is certified or provide
+   certificate numbers. The copy does not infer ISO 27001 or any other number.
+7. "Nationwide" is a brochure coverage claim. It does not prove an office in
+   every state or unrestricted delivery of every service in every location.
+8. No named visitor list, testimonial, customer quotation or partner-logo
+   permission is provided. Strategic visits are not presented as endorsements.
+9. Duplicate intelligence-dissemination entries on page 16 are consolidated.
+10. The brochure's superlatives and absolute protection language have been
+    moderated where needed. No new performance percentage, guaranteed response
+    time, commercial price, founding date, staff count or award has been added.
+11. British English is used for general prose. Formal brochure names such as
+    "Briech Intelligence Fusion Center" are retained; generic references use
+    "Intelligence Fusion Centre" consistently.
+
+F4. CONTENT NOT PROVIDED BY THE BROCHURE
+
+The following should not be invented or treated as approved company facts:
+- Full street address, telephone number and visitor directions.
+- Customer support hours or emergency contact channels.
+- Named leadership biographies, company history or incorporation details.
+- Specific pricing, packages, onboarding times or deployment schedules.
+- Privacy terms, consent requirements or data retention commitments.
+- A careers programme, job vacancies, news articles or customer testimonials.
+- Additional certification details or website trust badges.
+
+F5. DELIVERY CHECK
+
+Included: navigation; mobile labels; homepage hero; proof figures; about copy;
+service cards; fusion feature; sectors; Safe Schools; project highlights;
+infrastructure; collaboration; future service; contact CTA; detailed service
+pages; project page; Safe Schools page; contact details; proposed form labels
+and states; FAQs; footer; search metadata; source map and editorial notes.
+
+END OF WEBSITE COPY

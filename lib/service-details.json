@@ -1,0 +1,304 @@
+{
+  "intelligence-fusion": {
+    "eyebrow": "Intelligence Fusion & Analysis",
+    "heading": "Turn multiple information streams into actionable intelligence.",
+    "introduction": "Our Intelligence Fusion Centre connects collection, validation, analysis and reporting in a secure command environment, helping decision makers maintain situational awareness and respond to emerging threats.",
+    "sections": [
+      {
+        "title": "Intelligence Sources, Connected",
+        "kind": "Section heading",
+        "paragraphs": [
+          "The Centre combines UAV surveillance, Geographic Information Systems (GIS), CCTV and remote surveillance, Human Intelligence (HUMINT), Open Source Intelligence (OSINT), Electronic Intelligence (ELINT), satellite imagery, operational field reports, and sensor and IoT networks."
+        ],
+        "items": []
+      },
+      {
+        "title": "Threat Analysis",
+        "kind": "Section heading",
+        "paragraphs": [
+          "Our analysts evaluate activities across operational environments to identify potential threats before they escalate. Areas of analysis include suspicious movement, patterns of life, hostile activity indicators, border activity, terrorism and insurgency indicators, civil unrest, and threats to pipelines and critical infrastructure."
+        ],
+        "items": []
+      },
+      {
+        "title": "Operational Risk Analysis",
+        "kind": "Section heading",
+        "paragraphs": [
+          "Risk assessments consider security threats and operational vulnerabilities, equipment availability, infrastructure resilience, weather and environmental conditions, communication stability, power reliability and mission readiness."
+        ],
+        "items": []
+      },
+      {
+        "title": "Situational Awareness Around the Clock",
+        "kind": "Section heading",
+        "paragraphs": [
+          "Continuous monitoring brings together drone operations, live surveillance, satellite imagery, geographic mapping, camp and facility status, national security events, infrastructure conditions and environmental factors."
+        ],
+        "items": []
+      },
+      {
+        "title": "Intelligence Products That Support Decisions",
+        "kind": "Section heading",
+        "paragraphs": [],
+        "items": [
+          "Daily Situation Reports (SITREPs).",
+          "Incident Reports and Operational Updates.",
+          "Threat and Risk Assessments.",
+          "Intelligence Briefs.",
+          "Infrastructure Status Reports.",
+          "Mission Support Reports."
+        ]
+      },
+      {
+        "title": "A Shared Environment for Coordinated Action",
+        "kind": "Section heading",
+        "paragraphs": [
+          "Large-format video walls, operational dashboards and collaborative intelligence workflows help personnel from multiple security organisations work from a shared picture. Mission-focused analysis turns live information into support for operational decisions."
+        ],
+        "items": []
+      }
+    ],
+    "cta": "Discuss Intelligence Support"
+  },
+  "surveillance-command": {
+    "eyebrow": "Surveillance, Protection & Coordination",
+    "heading": "Maintain visibility. Detect threats. Coordinate response.",
+    "introduction": "Connect intelligent video surveillance, layered perimeter protection and command systems to build a unified view of your operational environment.",
+    "sections": [
+      {
+        "title": "Intelligent Video Surveillance",
+        "kind": "Section heading",
+        "paragraphs": [
+          "Our surveillance architecture uses high-definition IP cameras across camps and facilities, supported by long-range surveillance systems, mobile platforms, infrared night-vision cameras, fixed cameras and pan-tilt-zoom cameras. Together, these technologies support monitoring across day and night conditions."
+        ],
+        "items": []
+      },
+      {
+        "title": "Layered Perimeter Protection",
+        "kind": "Section heading",
+        "paragraphs": [
+          "Early warning begins at the perimeter. EIB STRATOC integrates complementary technologies to detect activity around protected environments:"
+        ],
+        "items": [
+          "Intelligent fence monitoring.",
+          "Motion detection sensors.",
+          "Fibre-optic intrusion detection.",
+          "Radar surveillance.",
+          "Thermal perimeter monitoring.",
+          "Ground vibration sensors.",
+          "Microwave barriers.",
+          "Infrared beam sensors."
+        ]
+      },
+      {
+        "title": "Command & Control",
+        "kind": "Section heading",
+        "paragraphs": [
+          "Our Command and Control Centre gives operators a unified view of the protected environment through GIS mapping, live camera management, centralised monitoring and video wall management. Incident and alarm management, resource tracking, operator dashboards and emergency coordination support informed response."
+        ],
+        "items": []
+      },
+      {
+        "title": "Communications That Connect Response Teams",
+        "kind": "Section heading",
+        "paragraphs": [
+          "Integrated communications include VoIP and satellite systems, emergency call stations, public address systems, mass notification platforms, SMS and email alerts, and dedicated mobile security applications."
+        ],
+        "items": []
+      },
+      {
+        "title": "Monitoring Across Critical Environments",
+        "kind": "Section heading",
+        "paragraphs": [
+          "Applications include borders, pipelines, oil and gas facilities, roads, railways, maritime and coastal environments, election activities and public assets."
+        ],
+        "items": []
+      }
+    ],
+    "cta": "Discuss Surveillance Requirements"
+  },
+  "geospatial-intelligence": {
+    "eyebrow": "Geospatial Intelligence",
+    "heading": "Turn location data into operational understanding.",
+    "introduction": "Our GIS solutions help security teams understand incidents, track movement, assess terrain and make informed decisions on the ground.",
+    "sections": [
+      {
+        "title": "Story Maps - Intelligence in Context",
+        "kind": "Section heading",
+        "paragraphs": [
+          "Interactive Story Maps bring timelines, incident patterns and response actions into a clear visual narrative. They help commanders understand what happened, where it happened and why it matters, while supporting briefings, training and stakeholder communication."
+        ],
+        "items": []
+      },
+      {
+        "title": "Live Dashboards - One View of the Situation",
+        "kind": "Section heading",
+        "paragraphs": [
+          "GIS dashboards consolidate surveillance feeds, patrol data, alerts and resources. Analysts can monitor hotspots, asset deployment, response times, coverage gaps and active threats through a shared live view."
+        ],
+        "items": []
+      },
+      {
+        "title": "Topographic Mapping - Understand the Terrain",
+        "kind": "Section heading",
+        "paragraphs": [
+          "EIB STRATOC has produced detailed topographic maps with contour data for key Local Government Areas in Plateau State, including Bassa, Qua'an Pan, Barkin Ladi, Riyom and Mangu, where its camps are located. These maps reveal elevation, slopes, access routes and natural barriers."
+        ],
+        "items": []
+      },
+      {
+        "title": "Camp Planning",
+        "kind": "Application",
+        "paragraphs": [
+          "Identify high ground, drainage patterns and access points."
+        ],
+        "items": []
+      },
+      {
+        "title": "Patrol Routing",
+        "kind": "Application",
+        "paragraphs": [
+          "Use terrain information to support safer, more efficient route planning."
+        ],
+        "items": []
+      },
+      {
+        "title": "Risk Assessment",
+        "kind": "Application",
+        "paragraphs": [
+          "Assess potential ambush locations, flood zones and movement corridors."
+        ],
+        "items": []
+      },
+      {
+        "title": "",
+        "kind": "Closing copy",
+        "paragraphs": [
+          "By combining Story Maps, live dashboards and terrain analysis, we help teams connect location, activity and operational context."
+        ],
+        "items": []
+      }
+    ],
+    "cta": "Discuss Geospatial Support"
+  },
+  "satellite-infrastructure": {
+    "eyebrow": "Satellite & Intelligence Infrastructure",
+    "heading": "Connect satellite reach with operational insight.",
+    "introduction": "Our satellite infrastructure supports the movement of intelligence from data acquisition to operational analysis across Nigeria and the African continent.",
+    "sections": [
+      {
+        "title": "Our Idu, Abuja Satellite Teleport",
+        "kind": "Section heading",
+        "paragraphs": [
+          "EIB STRATOC operates a satellite teleport at its Idu, Abuja facility. This infrastructure supports real-time data distribution and satellite image acquisition, helping clients understand their operational environments."
+        ],
+        "items": []
+      },
+      {
+        "title": "Strategic Operations Center",
+        "kind": "Section heading",
+        "paragraphs": [
+          "Advanced satellite communications and geospatial intelligence tools support the analysis of security events and coordination of response. These services connect satellite information with ground-level operational needs."
+        ],
+        "items": []
+      },
+      {
+        "title": "Part of an Integrated Intelligence Service",
+        "kind": "Section heading",
+        "paragraphs": [
+          "As owners of Briech Satellites and the Briech Intelligence Fusion Center, EIB STRATOC brings satellite services together with surveillance, intelligence analysis and command support."
+        ],
+        "items": []
+      }
+    ],
+    "cta": "Discuss Satellite Support"
+  },
+  "cybersecurity-data-security": {
+    "eyebrow": "Data Security & Cyber Watch",
+    "heading": "Protect the intelligence behind every decision.",
+    "introduction": "Sensitive intelligence depends on the infrastructure that stores, manages and protects it. EIB STRATOC combines dedicated data centre infrastructure with cybersecurity and digital forensics services.",
+    "sections": [
+      {
+        "title": "Infrastructure for Sensitive Intelligence",
+        "kind": "Section heading",
+        "paragraphs": [
+          "Our 200-rack Tier III data centre supports the management and protection of sensitive intelligence. Integrated cybersecurity systems and digital forensics services form part of this operational foundation."
+        ],
+        "items": []
+      },
+      {
+        "title": "Facility Credentials",
+        "kind": "Section heading",
+        "paragraphs": [],
+        "items": [
+          "Tier III certified.",
+          "ISO certified.",
+          "Uptime Institute certified.",
+          "NITDA compliant.",
+          "200-rack capacity."
+        ]
+      },
+      {
+        "title": "Cybersecurity & Digital Forensics",
+        "kind": "Section heading",
+        "paragraphs": [
+          "Cybersecurity and digital forensics services complement the broader intelligence service, supporting the protection and analysis of digital information within strategic operations."
+        ],
+        "items": []
+      }
+    ],
+    "cta": "Discuss Data Security Requirements"
+  },
+  "operational-support": {
+    "eyebrow": "National Projects & Mission Support",
+    "heading": "Intelligence that supports action in the field.",
+    "introduction": "EIB STRATOC supports government institutions, defence and security agencies, and private-sector organisations responsible for protecting critical assets. We combine intelligence collection, aerial surveillance, threat monitoring and operational coordination to strengthen situational awareness and decisions.",
+    "sections": [
+      {
+        "title": "Critical Infrastructure Protection",
+        "kind": "Section heading",
+        "paragraphs": [
+          "Support covers oil and gas pipeline surveillance, mining and mineral asset security, right-of-way monitoring, construction project security, industrial facility surveillance and remote asset monitoring."
+        ],
+        "items": []
+      },
+      {
+        "title": "Military Intelligence, Surveillance & Reconnaissance",
+        "kind": "Section heading",
+        "paragraphs": [
+          "Our ISR services include persistent aerial surveillance, battlefield intelligence support, route reconnaissance and force protection, target area monitoring, mission overwatch and tactical intelligence dissemination."
+        ],
+        "items": []
+      },
+      {
+        "title": "Support for Security Agencies",
+        "kind": "Section heading",
+        "paragraphs": [
+          "We support intelligence sharing and threat identification, search and clearance activities, operational coordination, command and control, live monitoring and incident reporting. This connects analysts, UAV operators and personnel on the ground around a shared operational picture."
+        ],
+        "items": []
+      },
+      {
+        "title": "Core Intelligence Services",
+        "kind": "Section heading",
+        "paragraphs": [],
+        "items": [
+          "Around-the-clock access to critical intelligence.",
+          "Tracking of sensitive human and equipment assets.",
+          "Ongoing training for security personnel.",
+          "Nationwide search and rescue coordination.",
+          "Support for terrorist risk assessments."
+        ]
+      },
+      {
+        "title": "Strategic National Support",
+        "kind": "Section heading",
+        "paragraphs": [
+          "The brochure describes a Special Activity Center in Abuja, collaboration with security agencies across Nigeria, digital forensics and cybersecurity services, military ISR missions and classified satellite support for defence operations."
+        ],
+        "items": []
+      }
+    ],
+    "cta": "Discuss Mission Support"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "tool": "Built-in image_gen",
+  "style": "Fine precise white and pale ice-blue technical blueprint wireframe sketch on flat royal blue #064bb8. Detailed internal construction lines, thin strokes, square composition, complete centered subject with clear margins. No text, labels, dimensions, border, watermark, gradients, glow, shadows or photorealism.",
+  "assets": [
+    {
+      "file": "uav.webp",
+      "subject": "a quadcopter surveillance drone seen directly from above, four detailed propellers, structural arms, central camera body"
+    },
+    {
+      "file": "gis.webp",
+      "subject": "a folded geographic topographic map in slight isometric view, detailed contour lines, river, road network and one location pin"
+    },
+    {
+      "file": "cctv.webp",
+      "subject": "a professional bullet CCTV surveillance camera with cylindrical lens housing and articulated wall mounting bracket, three-quarter side view"
+    },
+    {
+      "file": "humint.webp",
+      "subject": "two human bust profiles facing one another with a discreet connecting conversation waveform, detailed anatomical contour construction lines"
+    },
+    {
+      "file": "satellite.webp",
+      "subject": "an Earth observation satellite with two extended rectangular solar panel arrays, antenna and detailed central optical imaging instrument, isometric view"
+    },
+    {
+      "file": "field-reports.webp",
+      "subject": "a field reporting clipboard with several paper sheets, simple chart and map outlines on the paper and a pen alongside, no legible writing"
+    },
+    {
+      "file": "iot.webp",
+      "subject": "a central connected sensor gateway with antenna, surrounded by four smaller environmental sensor modules linked by precise thin schematic lines"
+    },
+    {
+      "file": "osint.webp",
+      "subject": "an open laptop with a magnifying glass over a globe on the display, a few small linked document outlines representing public information"
+    },
+    {
+      "file": "elint.webp",
+      "subject": "a parabolic radio receiving dish with support struts, feed horn, pedestal and subtle concentric signal arcs, three-quarter side view"
+    }
+  ]
+}

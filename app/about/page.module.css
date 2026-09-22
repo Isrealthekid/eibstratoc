@@ -1,0 +1,22 @@
+.page { background: var(--brand-blue); color: var(--foreground); }
+.hero { min-height: 85svh; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; padding: 180px var(--page-gutter) 72px; }
+.eyebrow { margin: 0 0 32px; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; }
+.hero h1 { max-width: 850px; margin: 0; font-size: clamp(40px, 5.5vw, 80px); line-height: .98; letter-spacing: -.055em; font-weight: 400; text-wrap: balance; }
+.introduction { max-width: 54ch; margin: 28px 0 0; font-size: clamp(14px, 1.3vw, 18px); line-height: 1.7; color: #d4ddec; }
+.content { background: #fff; color: var(--brand-blue); padding-inline: var(--page-gutter); }
+.row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 8vw; padding-block: 80px; border-bottom: 1px solid #264b8f25; }
+.content h2 { max-width: 18ch; margin: 0; font-size: clamp(28px, 3.2vw, 46px); font-weight: 400; line-height: 1.1; letter-spacing: -.045em; text-wrap: balance; }
+.content p { max-width: 64ch; margin: 0; font-size: clamp(14px, 1.2vw, 17px); line-height: 1.8; color: #52637b; }
+.content p + p { margin-top: 24px; }
+.purpose { display: grid; grid-template-columns: 1fr 1fr; gap: 8vw; padding-block: 64px; border-bottom: 1px solid #264b8f25; }
+.purpose h2 { margin-bottom: 24px; }
+.closing { padding: 96px var(--page-gutter); background: var(--section-grey); color: var(--brand-blue); }
+.closing h2 { max-width: 20ch; margin: 0 0 36px; font-size: clamp(36px, 4.5vw, 64px); line-height: 1.05; font-weight: 400; letter-spacing: -.05em; text-wrap: balance; }
+.cta { display: inline-flex; align-items: center; justify-content: space-between; gap: 36px; padding: 16px 20px; border-radius: 3px; background: #fff; color: var(--brand-blue); font-size: 12px; }
+.cta:hover { background: #eeeff2; }
+@media (max-width: 767px) {
+  .hero { min-height: 75svh; padding-top: 140px; padding-bottom: 48px; }
+  .row, .purpose { grid-template-columns: 1fr; gap: 28px; padding-block: 48px; }
+  .purpose { gap: 40px; }
+  .closing { padding-block: 64px; }
+}

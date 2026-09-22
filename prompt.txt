@@ -1,0 +1,695 @@
+Build a polished, cinematic loading experience for an organizational website. The loading screen should not function as a fake timer; it should visually represent the actual loading progress of the website’s critical above-the-fold content, especially the hero section, navigation, fonts, images, videos, and other assets required for the initial viewport.
+
+The experience should feel premium, minimal, responsive, and carefully choreographed.
+
+### 1. Initial Loading Screen
+
+When the website is first opened, immediately display a full-screen loading overlay that completely covers the viewport.
+
+The loading screen should use a solid dark navy-blue background matching the organization’s primary brand color.
+
+Requirements:
+
+* `position: fixed`
+* Fill the entire viewport: `100vw × 100vh`
+* Highest practical `z-index`
+* No visible page content underneath during the initial loading sequence
+* Disable page scrolling while the loader is active
+* Vertically and horizontally center the loading indicator
+* Avoid layout shifts
+* The loader should work consistently on desktop, tablet, and mobile devices
+
+The main page, navigation, and hero section should already be rendering/preloading behind this overlay.
+
+---
+
+### 2. Percentage Loading Counter
+
+At the exact center of the loading screen, display a numerical percentage indicator.
+
+The counter begins at:
+
+`1`
+
+and progressively increases until:
+
+`100`
+
+The number represents the percentage of the critical hero/navigation experience that has successfully loaded.
+
+The counter must not simply run using an arbitrary `setInterval()` timer.
+
+Instead, connect the visible percentage as closely as possible to actual preload progress for important assets such as:
+
+* Hero images
+* Hero background images
+* Hero videos
+* Navigation assets
+* Logo assets
+* Custom fonts
+* Hero illustrations
+* Above-the-fold images
+* Critical SVGs
+* Any other resources required before the initial hero section is presented
+
+Create a preload manager that tracks the completion state of these assets.
+
+For example:
+
+```text
+Loaded assets / Total critical assets × 100
+```
+
+The displayed percentage can be smoothly interpolated so that progress feels visually fluid rather than jumping abruptly between values.
+
+The loading number should:
+
+* Use clean typography
+* Be large enough to become the visual focus of the loading screen
+* Have no unnecessary progress bar unless required by the existing design
+* Animate smoothly between percentage values
+* Never visually decrease
+* Never exceed `100`
+* Only reach `100` after all critical hero/navigation assets are ready
+
+The counter should remain perfectly centered regardless of screen size.
+
+---
+
+### 3. Hero Content Preloading
+
+While the loading screen remains visible, preload the complete initial viewport in the background.
+
+The following elements should ideally be ready before the transition begins:
+
+* Navigation
+* Organization logo
+* Hero headline
+* Hero supporting copy
+* Hero CTA buttons
+* Hero imagery
+* Background visuals
+* Fonts
+* Decorative assets
+* Important animations
+* Any WebGL/canvas elements used in the hero
+* Critical responsive assets
+
+The goal is that when the loading screen opens, the user immediately sees the fully rendered hero rather than watching images, typography, or layout load afterward.
+
+Avoid unnecessary loading of the entire website before displaying the homepage. Prioritize only the resources needed for the hero and navigation so that the loading sequence does not unnecessarily delay the user.
+
+---
+
+### 4. Counter Completion Transition
+
+Once all required assets are ready and the progress reaches:
+
+`100`
+
+hold `100` on-screen very briefly so that the completion is perceptible.
+
+Recommended duration:
+
+`100–200ms`
+
+Then animate the number out.
+
+Use a smooth transition such as:
+
+* opacity `1 → 0`
+* slight scale change such as `1 → 0.95`
+
+Duration:
+
+approximately `200–300ms`
+
+After this transition completes, remove the percentage counter from view.
+
+Do not immediately reveal the website yet.
+
+---
+
+### 5. Logo Reveal
+
+Immediately after the number disappears, display the organization's logo from the project's existing assets folder.
+
+Do not recreate the logo using text.
+
+Use the actual logo asset supplied within the project, for example:
+
+```text
+/assets/logo.svg
+```
+
+or whichever logo file exists in the assets directory.
+
+Place the logo at the exact center of the loading screen.
+
+The animation should feel like a brief brand signature.
+
+Sequence:
+
+```text
+Logo opacity:
+0 → 1 → 0
+```
+
+The entire logo animation should take approximately:
+
+`0.5 seconds`
+
+Suggested timing:
+
+```text
+0ms      opacity: 0
+150ms    opacity: 1
+350ms    opacity: 1
+500ms    opacity: 0
+```
+
+Use a refined easing curve rather than a harsh linear fade.
+
+For example:
+
+```css
+cubic-bezier(0.22, 1, 0.36, 1)
+```
+
+Avoid scaling the logo aggressively. A tiny scale animation may be used if appropriate:
+
+```text
+0.98 → 1
+```
+
+but opacity should remain the primary effect.
+
+---
+
+### 6. Split-Screen Exit Transition
+
+Once the logo fades out, transform the loading background into two horizontal panels.
+
+Conceptually divide the screen as follows:
+
+```text
+┌────────────────────────────┐
+│                            │
+│       TOP PANEL            │
+│                            │
+├────────────────────────────┤
+│                            │
+│       BOTTOM PANEL         │
+│                            │
+└────────────────────────────┘
+```
+
+Both panels should initially use the same dark navy color as the loading screen so there is no visible seam before the animation starts.
+
+The split should occur horizontally at approximately:
+
+`50% of viewport height`
+
+Then animate both panels away simultaneously.
+
+#### Top Panel
+
+The upper half should translate vertically upward.
+
+```css
+transform: translateY(-100%);
+```
+
+It should exit through the top of the viewport.
+
+#### Bottom Panel
+
+The lower half should translate vertically downward.
+
+```css
+transform: translateY(100%);
+```
+
+It should exit through the bottom of the viewport.
+
+Both panels should move simultaneously.
+
+---
+
+### 7. Panel Motion Behaviour
+
+The opening movement should feel fast, deliberate, and slightly mechanical — almost like two shutters snapping open.
+
+Use a strong but smooth easing function.
+
+Possible starting point:
+
+```css
+cubic-bezier(0.76, 0, 0.24, 1)
+```
+
+or:
+
+```css
+cubic-bezier(0.83, 0, 0.17, 1)
+```
+
+Suggested duration:
+
+`650–900ms`
+
+The motion should feel more like a confident snap than a slow curtain animation.
+
+Avoid:
+
+* excessive bounce
+* elastic movement
+* exaggerated spring physics
+* overshooting the viewport dramatically
+
+The panels should move cleanly beyond the viewport boundaries.
+
+---
+
+### 8. Hero Reveal
+
+The hero section and navigation should already exist directly underneath the loader.
+
+As the two loading panels separate, the homepage should progressively become visible through the opening created between them.
+
+The reveal should therefore feel physical:
+
+```text
+Top loading panel moves upward
+                 ↑
+
+        Hero becomes visible
+
+                 ↓
+Bottom loading panel moves downward
+```
+
+Do not fade the entire hero from opacity `0`.
+
+The primary reveal should come from the loading panels physically exposing the content beneath them.
+
+However, individual hero elements may have subtle entrance animations once they become visible.
+
+For example:
+
+```text
+Navbar:
+opacity 0 → 1
+translateY(-10px → 0)
+
+Hero heading:
+opacity 0 → 1
+translateY(25px → 0)
+
+Body copy:
+opacity 0 → 1
+translateY(20px → 0)
+
+CTA:
+opacity 0 → 1
+translateY(15px → 0)
+```
+
+These animations should be subtle and secondary to the loader transition.
+
+---
+
+### 9. Animation Timing
+
+Coordinate the entire sequence carefully.
+
+A conceptual timeline could look like:
+
+```text
+PAGE OPEN
+│
+├── Loader appears
+│
+├── Percentage progresses from 1 → 100
+│
+├── Hero/nav assets complete loading
+│
+├── 100 displayed briefly
+│
+├── Percentage fades out
+│
+├── Logo fades in
+│
+├── Logo fades out
+│
+├── Loader divides horizontally
+│
+├── Top panel snaps upward
+│
+├── Bottom panel snaps downward
+│
+├── Hero + navbar are revealed
+│
+└── Loader is completely removed from DOM
+```
+
+Do not allow noticeable dead time between the individual stages.
+
+Each animation should naturally trigger the next.
+
+---
+
+### 10. Loader Architecture
+
+Structure the loader so that its individual components can be independently animated.
+
+Recommended architecture:
+
+```html
+<div class="preloader">
+
+    <div class="preloader-top-panel"></div>
+
+    <div class="preloader-bottom-panel"></div>
+
+    <div class="preloader-content">
+
+        <div class="loading-percentage">
+            1
+        </div>
+
+        <img
+            class="loading-logo"
+            src="/assets/logo.svg"
+            alt=""
+        />
+
+    </div>
+
+</div>
+```
+
+The top and bottom panels should exist throughout the sequence but initially appear as one seamless background.
+
+The content layer containing the counter and logo should sit above both panels.
+
+---
+
+### 11. State Management
+
+Treat the sequence as several controlled states rather than multiple unrelated timers.
+
+Example states:
+
+```text
+LOADING
+COMPLETE
+NUMBER_EXIT
+LOGO_ENTER
+LOGO_EXIT
+PANELS_OPEN
+FINISHED
+```
+
+The transition to the next state should generally happen when the previous animation or loading requirement has genuinely completed.
+
+Avoid stacking unrelated `setTimeout()` calls because they can become unreliable when:
+
+* the device is slow
+* assets load unusually quickly
+* the user changes tabs
+* animation frame rates drop
+* React components rerender
+
+Prefer:
+
+* Promise-based asset loading
+* animation completion callbacks
+* `transitionend`
+* `animationend`
+* GSAP timelines if GSAP already exists in the project
+* Framer Motion callbacks if Framer Motion is already being used
+
+Do not introduce a large animation library solely for this loader unless necessary.
+
+---
+
+### 12. Fast Connections
+
+If all critical assets load almost immediately, do not make the percentage counter jump instantly from:
+
+`1 → 100`
+
+Allow a short minimum loader duration so the transition still feels intentional.
+
+For example:
+
+```text
+Minimum visible loader duration:
+700–1200ms
+```
+
+During this minimum duration, smoothly interpolate the displayed progress.
+
+Once the minimum presentation duration and actual loading process are both complete, allow the counter to reach `100`.
+
+The loader should never artificially hold the user for several unnecessary seconds.
+
+---
+
+### 13. Slow Connections
+
+If loading genuinely takes longer, the displayed progress should correspond with actual preload state.
+
+If exact browser-level progress cannot be measured, estimate progress based on tracked critical assets.
+
+The interface should never remain visually frozen on one number for too long.
+
+Smoothly interpolate toward the latest known load percentage.
+
+For example, actual state might jump:
+
+```text
+15 → 36 → 59 → 82 → 100
+```
+
+while the user visually sees:
+
+```text
+15, 16, 17, 18...
+```
+
+because the displayed counter is easing toward the real progress state.
+
+---
+
+### 14. Repeat Visits
+
+Where appropriate, optimize the experience for returning users.
+
+Because browser caching may make critical resources load almost instantly, keep the animation short during cached visits.
+
+Do not unnecessarily force the full loading duration every time a user navigates between internal pages.
+
+Ideally, the full cinematic preloader runs only during:
+
+* the initial website visit
+* a hard page refresh
+* situations where hero assets genuinely need loading
+
+Internal client-side route changes should not replay the complete loader unless explicitly required by the design.
+
+---
+
+### 15. Scroll Lock
+
+While the preloader is active:
+
+```css
+body {
+    overflow: hidden;
+}
+```
+
+After the split transition has completely finished:
+
+```css
+body {
+    overflow: auto;
+}
+```
+
+Ensure the user cannot accidentally scroll the hidden page behind the loading overlay.
+
+---
+
+### 16. Accessibility
+
+Respect the user's reduced-motion preference.
+
+When:
+
+```css
+@media (prefers-reduced-motion: reduce)
+```
+
+is active, simplify the animation considerably.
+
+For example:
+
+```text
+Loader
+↓
+Progress completes
+↓
+Logo briefly appears
+↓
+Loader quickly fades
+↓
+Hero appears
+```
+
+Avoid the large split-screen movement for users requesting reduced motion.
+
+Also ensure the logo used purely as an animation element does not create unnecessary screen-reader announcements.
+
+Use:
+
+```html
+alt=""
+aria-hidden="true"
+```
+
+when appropriate.
+
+---
+
+### 17. Performance
+
+The loader itself must remain lightweight.
+
+Prioritize:
+
+```css
+transform
+opacity
+```
+
+for animation because they are typically GPU-friendly and avoid unnecessary layout recalculations.
+
+Avoid repeatedly animating:
+
+```text
+height
+width
+top
+bottom
+margin
+```
+
+when equivalent transform-based animation can be used.
+
+Use:
+
+```css
+will-change: transform;
+```
+
+only for the panels immediately before/during their animation and remove it afterward if necessary.
+
+The loading animation should not become the reason the website loads slowly.
+
+---
+
+### 18. Responsive Behaviour
+
+The animation must work correctly on:
+
+* large desktop monitors
+* laptops
+* tablets
+* mobile phones
+* portrait screens
+* landscape screens
+
+Always calculate movement relative to the viewport rather than fixed pixel distances.
+
+Use viewport-safe units where appropriate.
+
+Ensure browser interface resizing on mobile does not expose empty areas during the split animation.
+
+---
+
+### 19. Final Cleanup
+
+After both panels have completely moved outside the viewport:
+
+1. Remove the loader from the visual stacking context.
+2. Remove scroll locking.
+3. Remove unnecessary event listeners.
+4. Stop preload-related animation loops.
+5. Remove or unmount the preloader component where possible.
+6. Ensure keyboard focus works normally.
+7. Ensure hero animations are not accidentally replayed.
+
+The loader must not leave an invisible full-screen element blocking clicks.
+
+---
+
+### 20. Desired Visual Character
+
+The finished sequence should feel:
+
+* Premium
+* Corporate
+* Minimal
+* Purposeful
+* Cinematic
+* Technically smooth
+* Modern
+* Confident
+
+Avoid making it feel like a generic loading spinner.
+
+The intended visual sequence is:
+
+```text
+DARK BLUE SCREEN
+
+          1
+          ↓
+         ...
+          ↓
+         100
+
+          ↓
+
+        [LOGO]
+      fade in/out
+
+          ↓
+
+─────────────────────────────
+      DARK BLUE PANEL
+─────────────────────────────
+      DARK BLUE PANEL
+─────────────────────────────
+
+          ↓
+
+      ↑ Top panel exits ↑
+
+
+      WEBSITE REVEALED
+
+
+      ↓ Bottom panel exits ↓
+```
+
+The hero/navigation should feel as though it was already waiting underneath the loader, and the final split animation simply uncovers it.
+
+### Core Requirement
+
+Most importantly, do not treat this as a decorative five-second splash screen.
+
+The percentage counter should represent the preparation of the actual above-the-fold website experience. Once `100` is reached, the navigation and hero section should already be completely ready, allowing the split transition to reveal a stable, fully rendered first viewport with no visible asset popping, font swapping, broken images, or layout shifting.
