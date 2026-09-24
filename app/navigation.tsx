@@ -9,6 +9,7 @@ import { Text_03 } from "@/components/ui/wave-text";
 import { useEffect, useRef, useState } from "react";
 
 const MotionLink = motion.create(Link);
+const glassFilter = { backdropFilter: "blur(20px) saturate(125%)", WebkitBackdropFilter: "blur(20px) saturate(125%)" };
 
 const pages = [
   { label: "Home", href: "/" },
@@ -67,20 +68,20 @@ export default function Navigation() {
       <Link className="nav-brand" href="/" aria-label="Stratoc home">
         <Image src="/assets/logo-white.png" alt="Stratoc" width={460} height={225} priority unoptimized className="brand-logo" />
       </Link>
-      <nav className="nav-glass nav-primary" aria-label="Main navigation">
+      <nav className="nav-glass nav-primary" style={glassFilter} aria-label="Main navigation">
         {pages.map(({ label, href }) => {
           const active = href === "/" ? pathname === href : pathname === href || pathname.startsWith(`${href}/`);
           return <MotionLink initial="initial" whileHover="hover" whileFocus="hover" className={`nav-item${active ? " is-active" : ""}`} href={href} key={href} aria-current={active ? "page" : undefined}><Text_03 text={label} className="nav-wave" inheritHover /></MotionLink>;
         })}
       </nav>
-      <nav className="nav-glass nav-secondary" aria-label="Contact and projects">
+      <nav className="nav-glass nav-secondary" style={glassFilter} aria-label="Contact and projects">
         <MotionLink initial="initial" whileHover="hover" whileFocus="hover" className="nav-item" href="/projects" aria-current={pathname === "/projects" ? "page" : undefined}><Text_03 text="Projects" className="nav-wave" inheritHover /></MotionLink>
         <MotionLink initial="initial" whileHover="hover" whileFocus="hover" className="nav-item nav-contact" href="/contact" aria-current={pathname === "/contact" ? "page" : undefined}>
           <Text_03 text="Get in touch" className="nav-wave" inheritHover />
           <span className="nav-arrow" aria-hidden="true"><ArrowUpRight strokeWidth={1.8} /></span>
         </MotionLink>
       </nav>
-      <button type="button" className="mobile-menu-toggle" onClick={openMenu} aria-expanded={menuOpen} aria-controls="mobile-navigation" aria-haspopup="dialog">
+      <button type="button" className="mobile-menu-toggle" style={glassFilter} onClick={openMenu} aria-expanded={menuOpen} aria-controls="mobile-navigation" aria-haspopup="dialog">
         Menu<Menu size={20} aria-hidden="true" />
       </button>
       <dialog ref={menu} id="mobile-navigation" className="mobile-menu" aria-label="Site navigation" onClose={() => setMenuOpen(false)}>

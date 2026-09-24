@@ -1,5 +1,5 @@
 .page { background: var(--brand-blue); color: var(--foreground); }
-.hero { min-height: 85svh; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; padding: 180px var(--page-gutter) 72px; }
+.hero { min-height: 100svh; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; padding: 180px var(--page-gutter) 72px; }
 .eyebrow { margin: 0 0 32px; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; }
 .hero h1 { max-width: 850px; margin: 0; font-size: clamp(40px, 5.5vw, 80px); line-height: .98; letter-spacing: -.055em; font-weight: 400; text-wrap: balance; }
 .introduction { max-width: 54ch; margin: 28px 0 0; font-size: clamp(14px, 1.3vw, 18px); line-height: 1.7; color: #d4ddec; }
@@ -15,7 +15,7 @@
 .cta { display: inline-flex; align-items: center; justify-content: space-between; gap: 36px; padding: 16px 20px; border-radius: 3px; background: #fff; color: var(--brand-blue); font-size: 12px; }
 .cta:hover { background: #eeeff2; }
 @media (max-width: 767px) {
-  .hero { min-height: 75svh; padding-top: 140px; padding-bottom: 48px; }
+  .hero { padding-top: 140px; padding-bottom: 48px; }
   .row, .purpose { grid-template-columns: 1fr; gap: 28px; padding-block: 48px; }
   .purpose { gap: 40px; }
   .closing { padding-block: 64px; }

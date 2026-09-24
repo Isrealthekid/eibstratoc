@@ -44,7 +44,7 @@ There is no configured `npm test` script. Browser-check utilities in `tmp/` are 
 
 | Route | Content |
 | --- | --- |
-| `/` | Hero, operational metrics marquee, intelligence introduction, partnerships, service cards and closing section. |
+| `/` | Hero, operational metrics marquee, intelligence introduction, partnerships, service cards, projects and operational impact, and closing section. |
 | `/about` | Company background, vision, mission and operational foundation. |
 | `/services` | Services overview, approach, sticky service panels and the four-stage operational process. |
 | `/services/[slug]` | Full service descriptions, supporting sections and enquiry calls to action. |

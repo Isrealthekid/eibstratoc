@@ -1,7 +1,10 @@
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 import IntelligenceIntro from "./intelligence-intro";
 import OrganizationMarquee from "@/components/organization-marquee";
 import MetricsMarquee from "@/components/metrics-marquee";
 import HomeServices from "@/components/home-services";
+import ProjectsImpact from "@/components/projects-impact";
 
 export default function Home() {
   return (
@@ -21,9 +24,8 @@ export default function Home() {
       <IntelligenceIntro />
       <OrganizationMarquee />
       <HomeServices />
+      <ProjectsImpact />
       <section id="welcome" className="welcome"><p className="eyebrow">OUR ORGANIZATION</p><h2>Welcome to Stratoc.</h2></section>
     </div>
   );
 }
-import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
