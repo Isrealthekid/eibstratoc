@@ -33,22 +33,55 @@ export default function ProjectsImpact() {
 
     const cards = Array.from(section.querySelectorAll<HTMLLIElement>("li"));
     const fallback = window.matchMedia("(max-width: 1023px), (max-height: 480px), (prefers-reduced-motion: reduce)");
+    const writers = cards.map((card) => {
+      const node = card.querySelector<HTMLElement>(`.${styles.bodyText}`)!;
+      const text = node.dataset.fullText ?? "";
+      return { node, text, characters: Array.from(text), frame: 0, started: false };
+    });
     let frame = 0;
 
     const clamp = (value: number) => Math.max(0, Math.min(1, value));
+    const resetWriter = (index: number, showText: boolean) => {
+      const writer = writers[index];
+      cancelAnimationFrame(writer.frame);
+      writer.frame = 0;
+      writer.started = false;
+      writer.node.textContent = showText ? writer.text : "";
+      cards[index].removeAttribute("data-typing");
+    };
+    const startWriter = (index: number) => {
+      const writer = writers[index];
+      if (writer.started) return;
+      writer.started = true;
+      writer.node.textContent = "";
+      cards[index].dataset.typing = "true";
+      const start = performance.now();
+      const type = (now: number) => {
+        const progress = clamp((now - start) / 2000);
+        writer.node.textContent = writer.characters.slice(0, Math.floor(writer.characters.length * progress)).join("");
+        if (progress < 1) {
+          writer.frame = requestAnimationFrame(type);
+        } else {
+          writer.node.textContent = writer.text;
+          writer.frame = 0;
+          cards[index].removeAttribute("data-typing");
+        }
+      };
+      writer.frame = requestAnimationFrame(type);
+    };
     const update = () => {
       frame = 0;
       cards.forEach((card, index) => {
         const inner = card.firstElementChild as HTMLElement;
         const title = card.querySelector("h3")!;
-        const description = card.querySelector("p")!;
 
         if (fallback.matches) {
           card.style.removeProperty("clip-path");
           inner.style.removeProperty("transform");
           title.style.removeProperty("clip-path");
           title.style.removeProperty("filter");
-          description.style.removeProperty("clip-path");
+          card.removeAttribute("data-revealed");
+          resetWriter(index, true);
           return;
         }
 
@@ -57,16 +90,20 @@ export default function ProjectsImpact() {
         const inset = 94 * (1 - progress);
         const direction = index % 2 === 0 ? -1 : 1;
         const titleReveal = clamp((progress - .25) / .75);
-        const copyReveal = clamp((progress - .4) / .6);
-        const exit = clamp((450 - bounds.bottom) / 300);
 
         card.style.clipPath = index % 2 === 0
           ? `inset(0 ${inset}% ${inset}% 0)`
           : `inset(0 0 ${inset}% ${inset}%)`;
         inner.style.transform = `translate(${direction * 70 * (1 - progress)}px, ${-70 * (1 - progress)}px) scale(${1 + .2 * (1 - progress)})`;
         title.style.clipPath = `inset(0 ${(1 - titleReveal) * 100}% 0 0)`;
-        title.style.filter = `blur(${exit * 7}px)`;
-        description.style.clipPath = `inset(0 ${(1 - copyReveal) * 100}% 0 0)`;
+        title.style.removeProperty("filter");
+        if (progress >= 1) {
+          card.dataset.revealed = "true";
+          startWriter(index);
+        } else {
+          card.dataset.revealed = "false";
+          if (writers[index].started || writers[index].node.textContent) resetWriter(index, false);
+        }
       });
     };
     const schedule = () => { if (!frame) frame = requestAnimationFrame(update); };
@@ -77,6 +114,7 @@ export default function ProjectsImpact() {
     fallback.addEventListener("change", schedule);
     return () => {
       cancelAnimationFrame(frame);
+      writers.forEach((writer) => cancelAnimationFrame(writer.frame));
       window.removeEventListener("scroll", schedule);
       window.removeEventListener("resize", schedule);
       fallback.removeEventListener("change", schedule);
@@ -101,7 +139,11 @@ export default function ProjectsImpact() {
               <div className={styles.cardInner}>
                 <span className={styles.number}>{String(index + 1).padStart(2, "0")}</span>
                 <h3>{project.title}</h3>
-                <p>{project.description}</p>
+                <p>
+                  <span className={styles.measureText} aria-hidden="true">{project.description}</span>
+                  <span className={styles.bodyText} data-full-text={project.description} aria-hidden="true">{project.description}</span>
+                  <span className={styles.srOnly}>{project.description}</span>
+                </p>
               </div>
             </li>
           ))}
