@@ -25,7 +25,6 @@ export default function Home() {
       <OrganizationMarquee />
       <HomeServices />
       <ProjectsImpact />
-      <section id="welcome" className="welcome"><p className="eyebrow">OUR ORGANIZATION</p><h2>Welcome to Stratoc.</h2></section>
     </div>
   );
 }

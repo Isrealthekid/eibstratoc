@@ -44,8 +44,9 @@ There is no configured `npm test` script. Browser-check utilities in `tmp/` are 
 
 | Route | Content |
 | --- | --- |
-| `/` | Hero, operational metrics marquee, intelligence introduction, partnerships, service cards, projects and operational impact, and closing section. |
+| `/` | Hero, operational metrics marquee, intelligence introduction, partnerships, service cards, and projects and operational impact. |
 | `/about` | Company background, vision, mission and operational foundation. |
+| `/contact` | Contact details and an enquiry form that opens the visitor's email app with a prepared message. |
 | `/services` | Services overview, approach, sticky service panels and the four-stage operational process. |
 | `/services/[slug]` | Full service descriptions, supporting sections and enquiry calls to action. |
 | `/capabilities` | Capabilities overview and operational timeline. |
@@ -73,6 +74,7 @@ app/
   page-experience.tsx        Navigation, transitions, preloader and footer integration
   preloader.tsx              Initial loading experience
   about/                     About page and styles
+  contact/                   Contact page, form and styles
   services/                  Overview, full detail routes and styles
   capabilities/              Capabilities overview and summary routes
 components/
@@ -138,9 +140,9 @@ The application uses the standard Next.js server build. No static-export or host
 
 ## Remaining work
 
-- `/contact`, `/partners`, `/news` and `/projects` are linked from the interface but do not currently have page implementations.
-- Contact CTAs pointing to `/contact` need that page; the footer email link uses `mailto:info@eibstratoc.com`.
-- No enquiry form backend, CMS, authentication or database integration is implemented.
+- `/partners`, `/news` and `/projects` are linked from the interface but do not currently have page implementations.
+- The contact form prepares a `mailto:` message for the visitor to send in their email app. An enquiry backend is needed if submissions should happen directly on the site.
+- No CMS, authentication or database integration is implemented.
 - Root metadata in `app/layout.tsx` still needs final editorial review.
 - Confirm service claims, certifications, organisation relationships and image usage before publication.
 

@@ -139,8 +139,6 @@ a:focus-visible { outline: 2px solid #d4ddbf; outline-offset: 8px; }
   .intelligence-stage { position: relative; }
   .intelligence-word { opacity: 1 !important; filter: none !important; }
 }
-.welcome { background: var(--section-grey); color: var(--brand-blue); padding: 100px var(--page-gutter); }
-.welcome .eyebrow { color: #51634d; }
 .organization-section { display: grid; grid-template-columns: minmax(0, 40vw) minmax(0, 1fr); align-items: center; gap: 4vw; background: #fff; color: var(--brand-blue); padding: 32px var(--page-gutter) 36px; }
 .organization-heading { min-width: 0; margin: 0; text-align: left; }
 .organization-section > .marquee { min-width: 0; }
@@ -173,7 +171,6 @@ a:focus-visible { outline: 2px solid #d4ddbf; outline-offset: 8px; }
   .marquee-track { animation: none; min-width: 100%; }
   .marquee-group[aria-hidden="true"] { display: none; }
 }
-.welcome h2 { font-size: clamp(32px, 5vw, 64px); font-weight: 400; letter-spacing: -.04em; }
 @media (max-width: 767px) {
   .organization-section { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   .organization-heading { width: 70vw; max-width: 100%; }

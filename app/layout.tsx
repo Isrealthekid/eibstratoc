@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Stratoc",
-  description: "Welcome to Stratoc. Moving forward, together.",
+  title: "EIB STRATOC",
+  description: "Intelligence, surveillance and strategic operations for protecting people, critical infrastructure and national assets.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

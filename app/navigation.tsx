@@ -46,7 +46,7 @@ export default function Navigation() {
       if (!header.current) return;
       const logo = header.current.querySelector(".nav-brand")?.getBoundingClientRect();
       const line = logo ? (logo.top + logo.bottom) / 2 : 44;
-      const light = Array.from(document.querySelectorAll('.home-services, .service-detail, .welcome, .organization-section, [data-navigation-surface="light"]')).some((section) => {
+      const light = Array.from(document.querySelectorAll('.home-services, .service-detail, .organization-section, [data-navigation-surface="light"]')).some((section) => {
         const bounds = section.getBoundingClientRect();
         return bounds.top <= line && bounds.bottom > line;
       });
