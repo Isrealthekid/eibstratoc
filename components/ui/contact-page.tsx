@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { Check, Copy, Globe, Mail, MapPin, ArrowUpRight, Layers, type LucideIcon } from "lucide-react";
+import { Check, Copy, Mail, MapPin, ArrowUpRight, Layers, type LucideIcon, Star } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
@@ -40,9 +40,9 @@ export function ContactPage() {
           <Box icon={MapPin} title="Location" description="Home to our satellite teleport facility.">
             <p className="text-[clamp(14px,1.2vw,17px)] leading-[1.8]">Idu, Abuja<br />Nigeria</p>
           </Box>
-          <Box icon={Globe} title="Website" description="Explore our intelligence and surveillance services." className="border-b-0 md:border-r-0">
-            <a href="https://eibstratoc.com" className="flex min-w-0 items-center gap-2 text-[clamp(14px,1.2vw,17px)] leading-[1.8] hover:underline">
-              <span className="break-all">www.eibstratoc.com</span>
+          <Box icon={Star} title="Social media" description="Connect with us on Instagram." className="border-b-0 md:border-r-0">
+            <a href="https://www.instagram.com/eibstractorsac/" target="_blank" rel="noopener noreferrer" className="flex min-w-0 items-center gap-2 text-[clamp(14px,1.2vw,17px)] leading-[1.8] hover:underline">
+              <span className="break-all">eibstractorsac</span>
               <ArrowUpRight className="size-4 shrink-0" aria-hidden="true" />
             </a>
           </Box>
