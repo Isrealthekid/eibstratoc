@@ -13,56 +13,58 @@ export default function PageExperience({ children }: { children: ReactNode }) {
   const [initialPath] = useState(pathname);
   const previousPath = useRef(pathname);
   const page = useRef<HTMLDivElement>(null);
+  const transition = useRef<HTMLDivElement>(null);
+  const leadingWhiteCircle = useRef<HTMLDivElement>(null);
+  const blueCircle = useRef<HTMLDivElement>(null);
   const previousBackground = useRef<string | null>(null);
 
   useLayoutEffect(() => {
     const element = page.current;
     if (!element) return;
-    const viewport = element.parentElement!;
     const background = getComputedStyle(document.body).backgroundColor;
     const outgoingBackground = previousBackground.current ?? background;
     previousBackground.current = background;
     element.style.backgroundColor = background;
     if (previousPath.current === pathname) return;
     previousPath.current = pathname;
-    viewport.style.backgroundColor = outgoingBackground;
     const reduced = matchMedia("(prefers-reduced-motion: reduce)");
-    // Use viewport coordinates, not the midpoint of a potentially long page.
-    const rect = element.getBoundingClientRect();
-    const centerX = window.innerWidth / 2 - rect.left;
-    const centerY = window.innerHeight / 2 - rect.top;
+    if (reduced.matches) {
+      const fade = element.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 120 });
+      return () => fade.cancel();
+    }
+
+    const overlay = transition.current!;
     const radius = Math.hypot(window.innerWidth, window.innerHeight) / 2 + 4;
-    const center = `${centerX}px ${centerY}px`;
-    const animation = element.animate(
-      reduced.matches
-        ? [{ opacity: 0 }, { opacity: 1 }]
-        : [{ clipPath: `circle(12px at ${center})` }, { clipPath: `circle(${radius}px at ${center})` }],
-      { duration: reduced.matches ? 120 : 2500, easing: "cubic-bezier(.76, 0, .24, 1)" },
+    // All ripple layers share a viewport center that stays fixed while scrolling.
+    const circles = [
+      { clipPath: "circle(0px at 50% 50%)" },
+      { clipPath: `circle(${radius}px at 50% 50%)` },
+    ];
+    const duration = 2500;
+    const waveDelay = 500;
+    const timing = { duration, easing: "cubic-bezier(.45, 0, .2, 1)", fill: "both" as const };
+    overlay.style.backgroundColor = outgoingBackground;
+    overlay.dataset.active = "true";
+    const rippleAnimations = [leadingWhiteCircle, blueCircle].map((layer, index) =>
+      layer.current!.animate(circles, { ...timing, delay: index * waveDelay }),
     );
-    const keepCentered = () => {
-      if (reduced.matches || animation.playState !== "running") return;
-      const current = element.getBoundingClientRect();
-      const position = `${window.innerWidth / 2 - current.left}px ${window.innerHeight / 2 - current.top}px`;
-      (animation.effect as KeyframeEffect).setKeyframes([
-        { clipPath: `circle(12px at ${position})` },
-        { clipPath: `circle(${radius}px at ${position})` },
-      ]);
-    };
-    const finishOnResize = () => animation.finish();
-    const removeListeners = () => {
+    // The final ripple opens a hole through both color layers directly onto the page.
+    const reveal = overlay.animate([
+      { "--page-reveal-radius": "0px" },
+      { "--page-reveal-radius": `${radius}px` },
+    ], { ...timing, delay: 2 * waveDelay });
+    const animations = [...rippleAnimations, reveal];
+    const finishOnResize = () => animations.forEach((animation) => animation.finish());
+    const reset = () => {
       window.removeEventListener("resize", finishOnResize);
-      window.removeEventListener("scroll", keepCentered);
+      delete overlay.dataset.active;
+      overlay.style.removeProperty("background-color");
+      animations.forEach((animation) => animation.cancel());
     };
     window.addEventListener("resize", finishOnResize);
-    window.addEventListener("scroll", keepCentered, { passive: true });
-    animation.finished.then(removeListeners, removeListeners);
-    // No fill mode: the clip disappears on completion, exposing the entire
-    // document and keeping the Services sticky scroll sequence functional.
-    return () => {
-      removeListeners();
-      animation.cancel();
-      viewport.style.removeProperty("background-color");
-    };
+    reveal.finished.then(reset, () => {});
+    // Always clear the layers, including when another navigation interrupts them.
+    return reset;
   }, [pathname]);
 
   return (
@@ -72,6 +74,10 @@ export default function PageExperience({ children }: { children: ReactNode }) {
         <Navigation />
         <div className="page-transition-viewport">
           <div ref={page} className="page-transition-content">{children}</div>
+        </div>
+        <div ref={transition} className="page-transition-overlay" aria-hidden="true">
+          <div ref={leadingWhiteCircle} className="page-transition-circle page-transition-circle-white" />
+          <div ref={blueCircle} className="page-transition-circle page-transition-circle-blue" />
         </div>
         <SiteFooter />
       </div>
