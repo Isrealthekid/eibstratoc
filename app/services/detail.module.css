@@ -2,16 +2,16 @@
 .hero { padding: 140px var(--page-gutter) 72px; background: var(--brand-blue); color: #fff; }
 .back { display: inline-flex; gap: 12px; align-items: center; font-size: 12px; margin-bottom: 70px; color: #bdcddd; }
 .eyebrow { font-family: inherit; font-size: 11px; line-height: 1.6; letter-spacing: .12em; text-transform: none; margin: 0 0 24px; }
-.hero h1 { max-width: 19ch; font-size: clamp(40px, min(5.5vw, 79.2px), 80px); font-weight: 400; line-height: 1.02; letter-spacing: -.055em; margin: 0; }
+.hero h1 { max-width: 19ch; font-size: clamp(40px, min(5.5vw, calc(var(--site-max-width) * 0.055)), 80px); font-weight: 400; line-height: 1.02; letter-spacing: -.055em; margin: 0; }
 .introduction { margin: 28px 0 0; max-width: 650px; }
-.introduction p { color: #c3d0dc; font-size: clamp(16px, min(1.3vw, 18.72px), 20px); line-height: 1.7; margin: 0 0 28px; }
-.visual { position: relative; height: clamp(280px, min(45vw, 648px), 650px); }
+.introduction p { color: #c3d0dc; font-size: clamp(16px, min(1.3vw, calc(var(--site-max-width) * 0.013000000000000001)), 20px); line-height: 1.7; margin: 0 0 28px; }
+.visual { position: relative; height: clamp(280px, min(45vw, calc(var(--site-max-width) * 0.45)), 650px); }
 .visual img { object-fit: cover; }
 .content { padding: 50px var(--page-gutter) 90px; }
-.section { display: grid; grid-template-columns: 1fr 1fr; gap: min(8vw, 115.2px); padding-block: 54px; border-bottom: 1px solid #dde3ea; }
+.section { display: grid; grid-template-columns: 1fr 1fr; gap: min(8vw, calc(var(--site-max-width) * 0.08)); padding-block: 54px; border-bottom: 1px solid #dde3ea; }
 .sectionHeading { display: flex; align-items: baseline; gap: 24px; }
 .number { color: #8392a2; font-family: inherit; font-size: 11px; }
-.section h2 { max-width: 24ch; font-size: clamp(26px, min(2.8vw, 40.32px), 42px); font-weight: 400; line-height: 1.15; letter-spacing: -.04em; margin: 0; }
+.section h2 { max-width: 24ch; font-size: clamp(26px, min(2.8vw, calc(var(--site-max-width) * 0.027999999999999997)), 42px); font-weight: 400; line-height: 1.15; letter-spacing: -.04em; margin: 0; }
 .sectionCopy { color: #526170; font-size: 16px; line-height: 1.8; }
 .sectionCopy p { margin: 0 0 20px; }
 .sectionCopy p:last-child { margin-bottom: 0; }
@@ -19,13 +19,13 @@
 .sectionCopy li { padding: 8px 0 8px 8px; border-bottom: 1px solid #eef0f3; }
 .sectionCopy li::marker { color: var(--brand-blue); }
 .closing { background: var(--section-grey); color: var(--brand-blue); padding: 90px var(--page-gutter) 40px; }
-.closing h2 { font-size: clamp(40px, min(5.5vw, 79.2px), 80px); line-height: 1.05; letter-spacing: -.05em; margin: 0 0 32px; font-weight: 400; }
-.next { margin-top: 80px; border-top: 1px solid #264b8f30; padding-top: 30px; display: flex; align-items: center; gap: 24px; font-size: clamp(20px, min(2.8vw, 40.32px), 36px); }
+.closing h2 { font-size: clamp(40px, min(5.5vw, calc(var(--site-max-width) * 0.055)), 80px); line-height: 1.05; letter-spacing: -.05em; margin: 0 0 32px; font-weight: 400; }
+.next { margin-top: 80px; border-top: 1px solid #264b8f30; padding-top: 30px; display: flex; align-items: center; gap: 24px; font-size: clamp(20px, min(2.8vw, calc(var(--site-max-width) * 0.027999999999999997)), 36px); }
 .next span { margin-right: auto; font-size: 11px; text-transform: none; letter-spacing: .1em; color: var(--brand-blue); }
 @media(max-width: 767px) {
  .hero { padding-top: 120px; padding-bottom: 48px; }
  .back { margin-bottom: 48px; }
- .hero h1 { font-size: clamp(40px, min(10vw, 144px), 65px); }
+ .hero h1 { font-size: clamp(40px, min(10vw, calc(var(--site-max-width) * 0.1)), 65px); }
  .introduction { margin-top: 30px; }
  .content { padding-block: 20px 48px; }
  .section { grid-template-columns: 1fr; gap: 24px; padding-block: 36px; }

@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: minmax(0, .8fr) minmax(0, 1.4fr);
   align-items: start;
-  gap: clamp(30px, min(4vw, 57.6px), 65px);
+  gap: clamp(30px, min(4vw, calc(var(--site-max-width) * 0.04)), 65px);
 }
 
 .intro {
@@ -28,7 +28,7 @@
 .intro h2 {
   max-width: 14ch;
   margin: 0;
-  font-size: clamp(36px, min(4.5vw, 64.8px), 64px);
+  font-size: clamp(36px, min(4.5vw, calc(var(--site-max-width) * 0.045)), 64px);
   font-weight: 400;
   line-height: 1.05;
   letter-spacing: -.055em;
@@ -110,7 +110,7 @@
 .card h3 {
   max-width: 21ch;
   margin: 26px 0 0;
-  font-size: clamp(19px, min(1.6vw, 23.04px), 24px);
+  font-size: clamp(19px, min(1.6vw, calc(var(--site-max-width) * 0.016)), 24px);
   font-weight: 500;
   line-height: 1.18;
   letter-spacing: -.025em;
@@ -182,7 +182,7 @@
 @media (min-width: 1024px) and (max-height: 700px) {
   .intro { top: 72px; }
   .eyebrow { margin-bottom: 18px; }
-  .intro h2 { font-size: clamp(34px, min(4vw, 57.6px), 58px); }
+  .intro h2 { font-size: clamp(34px, min(4vw, calc(var(--site-max-width) * 0.04)), 58px); }
   .description { margin-top: 18px; }
   .cta { margin-top: 28px; }
 }
@@ -190,7 +190,7 @@
 @media (max-width: 767px) {
   .section { padding-block: 72px; }
   .layout { grid-template-columns: 1fr; gap: 48px; }
-  .intro h2 { max-width: 17ch; font-size: clamp(34px, min(9vw, 129.6px), 52px); }
+  .intro h2 { max-width: 17ch; font-size: clamp(34px, min(9vw, calc(var(--site-max-width) * 0.09)), 52px); }
   .cta { margin-top: 32px; }
   .card, .cardInner { min-height: 280px; }
 }

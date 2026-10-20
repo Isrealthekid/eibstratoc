@@ -1,6 +1,6 @@
 @import "tailwindcss";
 :root {
-  --site-max-width: 1440px;
+  --site-max-width: 1920px;
   --page-gutter: 28px;
   --brand-blue: #264b8f;
   --section-grey: #f1f1f1;
@@ -184,10 +184,10 @@
   margin: 0;
 }
 .site-footer-wordmark {
-  width: min(100vw, 1440px);
+  width: min(100vw, calc(var(--site-max-width) * 1));
   flex-shrink: 0;
   margin: 40px 0 -0.16em calc(-1 * var(--page-gutter));
-  font-size: min(18.6vw, 267.84px);
+  font-size: min(18.6vw, calc(var(--site-max-width) * 0.18600000000000003));
   line-height: 0.9;
   font-weight: 400;
   letter-spacing: -0.065em;
@@ -312,7 +312,7 @@ a:focus-visible {
 .loading-counter {
   grid-area: 1 / 1;
   color: var(--brand-blue);
-  font-size: clamp(41.6px, min(5.85vw, 84.24px), 83.2px);
+  font-size: clamp(41.6px, min(5.85vw, calc(var(--site-max-width) * 0.058499999999999996)), 83.2px);
   font-weight: 300;
   line-height: 1;
   letter-spacing: -0.065em;
@@ -355,7 +355,7 @@ a:focus-visible {
 }
 .loading-logo {
   grid-area: 1 / 1;
-  width: clamp(117px, min(15.6vw, 224.64px), 195px);
+  width: clamp(117px, min(15.6vw, calc(var(--site-max-width) * 0.156)), 195px);
   height: auto;
   opacity: 0;
 }
@@ -487,7 +487,7 @@ a:focus-visible {
   max-width: 780px;
 }
 .hero h1 {
-  font-size: clamp(40px, min(5.5vw, 79.2px), 80px);
+  font-size: clamp(40px, min(5.5vw, calc(var(--site-max-width) * 0.055)), 80px);
   font-weight: 400;
   line-height: 0.96;
   letter-spacing: -0.055em;
@@ -529,7 +529,7 @@ a:focus-visible {
   flex-direction: column;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: clamp(280px, min(25vw, 360px), 400px);
+  width: clamp(280px, min(25vw, calc(var(--site-max-width) * 0.25)), 400px);
   min-height: 126px;
   margin: 0;
   padding: 8px 28px;
@@ -538,7 +538,7 @@ a:focus-visible {
 .metric-value {
   order: -1;
   margin: 0 0 14px;
-  font-size: clamp(32px, min(3.4vw, 48.96px), 48px);
+  font-size: clamp(32px, min(3.4vw, calc(var(--site-max-width) * 0.034)), 48px);
   font-weight: 400;
   line-height: 1.1;
   letter-spacing: -0.045em;
@@ -618,7 +618,7 @@ a:focus-visible {
   max-width: 1100px;
   margin: 0;
   text-align: center;
-  font-size: clamp(21px, min(2.7vw, 38.88px), 40px);
+  font-size: clamp(21px, min(2.7vw, calc(var(--site-max-width) * 0.027000000000000003)), 40px);
   line-height: 1.45;
   font-weight: 400;
   letter-spacing: -0.035em;
@@ -631,7 +631,7 @@ a:focus-visible {
     padding: 150px var(--page-gutter) 50px;
   }
   .intelligence-copy {
-    font-size: clamp(18px, min(4.8vw, 69.12px), 25px);
+    font-size: clamp(18px, min(4.8vw, calc(var(--site-max-width) * 0.048)), 25px);
     line-height: 1.5;
   }
 }
@@ -659,9 +659,9 @@ a:focus-visible {
 }
 .organization-section {
   display: grid;
-  grid-template-columns: minmax(0, min(40vw, 576px)) minmax(0, 1fr);
+  grid-template-columns: minmax(0, min(40vw, calc(var(--site-max-width) * 0.4))) minmax(0, 1fr);
   align-items: center;
-  gap: min(4vw, 57.6px);
+  gap: min(4vw, calc(var(--site-max-width) * 0.04));
   background: #fff;
   color: var(--brand-blue);
   padding: 32px var(--page-gutter) 36px;
@@ -675,16 +675,16 @@ a:focus-visible {
   min-width: 0;
 }
 .organization-heading h2 {
-  max-width: min(40vw, 576px);
+  max-width: min(40vw, calc(var(--site-max-width) * 0.4));
   margin: 0;
-  font-size: clamp(32px, min(4.5vw, 64.8px), 64px);
+  font-size: clamp(32px, min(4.5vw, calc(var(--site-max-width) * 0.045)), 64px);
   line-height: 1.05;
   font-weight: 400;
   letter-spacing: -0.055em;
   text-wrap: balance;
 }
 .organization-heading p {
-  max-width: min(40vw, 576px);
+  max-width: min(40vw, calc(var(--site-max-width) * 0.4));
   margin: 12px 0 0;
   font-size: 11px;
   line-height: 1.6;
@@ -721,7 +721,7 @@ a:focus-visible {
 .organization-logo {
   display: grid;
   place-items: center;
-  width: clamp(160px, min(20vw, 288px), 280px);
+  width: clamp(160px, min(20vw, calc(var(--site-max-width) * 0.2)), 280px);
   height: 96px;
   padding: 12px 20px;
 }
@@ -804,7 +804,7 @@ a:focus-visible {
     gap: 24px;
   }
   .organization-heading {
-    width: min(70vw, 1008px);
+    width: min(70vw, calc(var(--site-max-width) * 0.7));
     max-width: 100%;
   }
   .organization-heading h2,
@@ -830,9 +830,9 @@ a:focus-visible {
   text-transform: uppercase;
 }
 .home-services-heading h2 {
-  max-width: min(40vw, 576px);
+  max-width: min(40vw, calc(var(--site-max-width) * 0.4));
   margin: 0;
-  font-size: clamp(32px, min(4.5vw, 64.8px), 64px);
+  font-size: clamp(32px, min(4.5vw, calc(var(--site-max-width) * 0.045)), 64px);
   line-height: 1.05;
   font-weight: 400;
   letter-spacing: -0.055em;
@@ -860,10 +860,10 @@ a:focus-visible {
   isolation: isolate;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: clamp(28px, min(4vw, 57.6px), 60px);
+  gap: clamp(28px, min(4vw, calc(var(--site-max-width) * 0.04)), 60px);
   padding: 30px;
   width: 100%;
-  height: clamp(360px, min(30vw, 432px), 440px);
+  height: clamp(360px, min(30vw, calc(var(--site-max-width) * 0.3)), 440px);
   background: #111;
   color: #f7f7f7;
   border-radius: 6px;
@@ -886,7 +886,7 @@ a:focus-visible {
 }
 .stacking-card-copy h3 {
   margin: 0;
-  font-size: clamp(25px, min(2.3vw, 33.12px), 34px);
+  font-size: clamp(25px, min(2.3vw, calc(var(--site-max-width) * 0.023)), 34px);
   font-weight: 400;
   line-height: 1.15;
   letter-spacing: -0.045em;
@@ -968,11 +968,11 @@ a:focus-visible {
 .service-detail-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: min(6vw, 86.4px);
+  gap: min(6vw, calc(var(--site-max-width) * 0.06));
   align-items: center;
 }
 .service-detail h1 {
-  font-size: clamp(36px, min(5vw, 72px), 72px);
+  font-size: clamp(36px, min(5vw, calc(var(--site-max-width) * 0.05)), 72px);
   font-weight: 400;
   line-height: 1.05;
   letter-spacing: -0.05em;
@@ -1187,7 +1187,7 @@ a:focus-visible {
   gap: 20px;
   min-height: 52px;
   padding: 10px 0;
-  font-size: clamp(28px, min(7vw, 100.8px), 42px);
+  font-size: clamp(28px, min(7vw, calc(var(--site-max-width) * 0.07)), 42px);
   line-height: 1.15;
   letter-spacing: -0.04em;
   border-bottom: 1px solid #ffffff25;
@@ -1258,7 +1258,7 @@ body:has(.services-page) {
   margin: 0 0 24px;
 }
 .services-intro h1 {
-  font-size: clamp(36px, min(3.8vw, 54.72px), 60px);
+  font-size: clamp(36px, min(3.8vw, calc(var(--site-max-width) * 0.038)), 60px);
   line-height: 1.04;
   font-weight: 400;
   letter-spacing: -0.055em;
@@ -1357,7 +1357,7 @@ body:has(.services-page) {
   padding: 20px 16px 14px;
 }
 .service-card-copy h2 {
-  font-size: clamp(17px, min(1.45vw, 20.88px), 23px);
+  font-size: clamp(17px, min(1.45vw, calc(var(--site-max-width) * 0.014499999999999999)), 23px);
   line-height: 1.15;
   font-weight: 500;
   letter-spacing: -0.035em;
@@ -1387,7 +1387,7 @@ body:has(.services-page) {
   padding: 160px 0 80px;
 }
 .services-end h2 {
-  font-size: clamp(38px, min(5.5vw, 79.2px), 80px);
+  font-size: clamp(38px, min(5.5vw, calc(var(--site-max-width) * 0.055)), 80px);
   line-height: 1.05;
   letter-spacing: -0.05em;
   font-weight: 400;
@@ -1497,7 +1497,7 @@ body:has(.services-page) {
   position: absolute;
   top: 0;
   left: 0;
-  width: clamp(260px, min(26vw, 374.4px), 390px);
+  width: clamp(260px, min(26vw, calc(var(--site-max-width) * 0.26)), 390px);
   margin: 0;
   will-change: transform;
 }
