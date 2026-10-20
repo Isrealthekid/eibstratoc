@@ -254,11 +254,11 @@ html {
   font-size: 100%;
   scroll-behavior: smooth;
 }
-/* Keep the 1440px desktop proportions as the CSS viewport grows.
-   One rem equals 16px at 1440px and scales with the viewport above it. */
-@media (min-width: 1440px) {
+/* Keep the 1000px desktop proportions as the CSS viewport grows.
+   One rem equals 16px at 1000px and scales with the viewport above it. */
+@media (min-width: 1000px) {
   html {
-    font-size: calc(100vw / 90);
+    font-size: calc(100vw / 62.5);
   }
 }
 body {
