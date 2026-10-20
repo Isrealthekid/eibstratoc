@@ -8,7 +8,7 @@
 .layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
-  gap: clamp(40px, 7vw, 120px);
+  gap: clamp(40px, min(7vw, 100.8px), 120px);
   min-height: min(610px, calc(100svh - 250px));
 }
 
@@ -23,7 +23,7 @@
 
 .introduction h1 {
   margin: 0 0 16px;
-  font-size: clamp(42px, 5.5vw, 80px);
+  font-size: clamp(42px, min(5.5vw, 79.2px), 80px);
   font-weight: 400;
   line-height: .98;
   letter-spacing: -.055em;
@@ -32,7 +32,7 @@
 .introduction > div:first-child > p {
   max-width: 36ch;
   margin: 0;
-  font-size: clamp(14px, 1.35vw, 18px);
+  font-size: clamp(14px, min(1.35vw, 19.44px), 18px);
   line-height: 1.5;
 }
 
@@ -61,7 +61,7 @@
 
 .enquiry h2 {
   margin: 0 0 20px;
-  font-size: clamp(20px, 2vw, 28px);
+  font-size: clamp(20px, min(2vw, 28.8px), 28px);
   font-weight: 400;
   letter-spacing: -.035em;
 }
@@ -172,7 +172,7 @@
   .page { padding-top: 132px; padding-bottom: 70px; }
   .layout { grid-template-columns: 1fr; gap: 60px; min-height: 0; }
   .introduction { gap: 40px; padding: 0; }
-  .introduction h1 { font-size: clamp(42px, 10vw, 68px); }
+  .introduction h1 { font-size: clamp(42px, min(10vw, 144px), 68px); }
   .directContact p { margin-top: 20px; }
 }
 

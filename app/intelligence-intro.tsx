@@ -13,33 +13,58 @@ export default function IntelligenceIntro() {
     if (!element) return;
     const spans = Array.from(element.querySelectorAll<HTMLElement>(".intelligence-word"));
     const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
-    let frame = 0;
-    const update = () => {
-      frame = 0;
-      const rect = element.getBoundingClientRect();
-      const distance = Math.max(1, rect.height - window.innerHeight);
-      const progress = Math.max(0, Math.min(1, -rect.top / distance));
+    const animations: Animation[] = [];
+    let started = false;
+    const reveal = () => {
+      if (started) return;
+      started = true;
+      observer.disconnect();
       spans.forEach((span, index) => {
-        const reveal = window.innerHeight <= 700
-          ? (window.innerHeight * 0.85 - span.getBoundingClientRect().top) / (window.innerHeight * 0.3)
-          : (progress * 1.18 + 0.16 - index / words.length) / 0.16;
-        const amount = motion.matches ? 1 : Math.max(0, Math.min(1, reveal));
-        span.style.opacity = String(0.16 + amount * 0.84);
-        span.style.filter = `blur(${(1 - amount) * 7}px)`;
+        animations.push(span.animate(
+          [
+            { opacity: 0.16, filter: "blur(7px)" },
+            { opacity: 1, filter: "blur(0px)" },
+          ],
+          {
+            duration: 450,
+            delay: index * (2500 - 450) / Math.max(1, spans.length - 1),
+            easing: "ease-out",
+            fill: "both",
+          },
+        ));
       });
     };
-    const schedule = () => {
-      if (!frame) frame = window.requestAnimationFrame(update);
+    const observer = new IntersectionObserver((entries) => {
+      if (entries.some((entry) => entry.isIntersecting)) reveal();
+    }, { rootMargin: "0px 0px -15% 0px", threshold: 0 });
+    const handleMotion = () => {
+      if (!motion.matches) return;
+      started = true;
+      observer.disconnect();
+      animations.forEach((animation) => animation.cancel());
+      spans.forEach((span) => {
+        span.style.removeProperty("opacity");
+        span.style.removeProperty("filter");
+      });
     };
-    update();
-    window.addEventListener("scroll", schedule, { passive: true });
-    window.addEventListener("resize", schedule);
-    motion.addEventListener("change", schedule);
+    if (motion.matches) {
+      handleMotion();
+    } else {
+      spans.forEach((span) => {
+        span.style.opacity = "0.16";
+        span.style.filter = "blur(7px)";
+      });
+      observer.observe(element.querySelector(".intelligence-copy")!);
+    }
+    motion.addEventListener("change", handleMotion);
     return () => {
-      window.cancelAnimationFrame(frame);
-      window.removeEventListener("scroll", schedule);
-      window.removeEventListener("resize", schedule);
-      motion.removeEventListener("change", schedule);
+      observer.disconnect();
+      animations.forEach((animation) => animation.cancel());
+      spans.forEach((span) => {
+        span.style.removeProperty("opacity");
+        span.style.removeProperty("filter");
+      });
+      motion.removeEventListener("change", handleMotion);
     };
   }, []);
 
