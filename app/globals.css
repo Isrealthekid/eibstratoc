@@ -335,6 +335,15 @@ a:focus-visible {
   z-index: 100000;
   pointer-events: none;
 }
+.navigation {
+  transition: transform 500ms ease-in-out;
+}
+.navigation[data-scroll-hidden="true"]:not([data-menu-open="true"]):not(:has(:focus-visible)) {
+  transform: translateY(-100%);
+}
+@media (prefers-reduced-motion: reduce) {
+  .navigation { transition: none; }
+}
 .navigation > * {
   pointer-events: auto;
 }
@@ -625,26 +634,32 @@ a:focus-visible {
 }
 .organization-section {
   display: grid;
-  grid-template-columns: minmax(0, 40%) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 32%) minmax(0, 1fr);
   align-items: center;
   gap: 4%;
   background: #fff;
   color: var(--brand-blue);
-  padding: 2rem var(--page-gutter) 2.25rem;
+  padding: 4rem var(--page-gutter);
 }
 .organization-heading {
   min-width: 0;
   margin: 0;
   text-align: left;
 }
-.organization-section > .marquee {
+.organization-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   min-width: 0;
+  margin: 0;
+  padding: 0 0 0 2rem;
+  list-style: none;
+  border-left: 0.0625rem solid #e8ebef;
 }
 .organization-heading h2 {
   max-width: 100%;
   margin: 0;
-  font-size: clamp(2rem, calc(4.5 * var(--type-vw)), 4rem);
-  line-height: 1.05;
+  font-size: 1.75rem;
+  line-height: 1.2;
   font-weight: 400;
   letter-spacing: -0.055em;
   text-wrap: balance;
@@ -687,20 +702,21 @@ a:focus-visible {
 .organization-logo {
   display: grid;
   place-items: center;
-  width: 17.5rem;
-  height: 6rem;
+  min-width: 0;
+  min-height: 7.5rem;
   padding: 0.75rem 1.25rem;
+}
+.organization-logo:nth-child(n + 3) {
+  border-top: 0.0625rem solid #e8ebef;
 }
 .organization-image {
   position: relative;
   width: 8.75rem;
+  max-width: 100%;
   height: 4.25rem;
 }
 .organization-image img {
   object-fit: contain;
-}
-.organization-section .marquee:focus-visible {
-  outline-color: var(--brand-blue);
 }
 .organization-image-onsa,
 .organization-image-police {
@@ -738,8 +754,7 @@ a:focus-visible {
     font-size: 0.625rem;
   }
   .organization-logo {
-    width: 9.375rem;
-    height: 5rem;
+    min-height: 6rem;
     padding: 0.625rem 1rem;
   }
   .organization-image {
@@ -770,8 +785,13 @@ a:focus-visible {
     gap: 1.5rem;
   }
   .organization-heading {
-    width: 70%;
+    width: 100%;
     max-width: 100%;
+  }
+  .organization-grid {
+    border-left: 0;
+    border-top: 0.0625rem solid #e8ebef;
+    padding-left: 0;
   }
   .organization-heading h2,
   .organization-heading p {
@@ -843,6 +863,12 @@ a:focus-visible {
   pointer-events: none;
   background: url("/assets/services/grain.svg") repeat;
   opacity: 0.065;
+}
+.stacking-card-stage:nth-child(even) .stacking-card {
+  background: var(--brand-blue);
+}
+.stacking-card-stage:nth-child(even) .stacking-card-copy p {
+  color: #e0e7f2;
 }
 .stacking-card-copy {
   display: flex;

@@ -40,12 +40,43 @@ export default function Navigation() {
   }, [pathname]);
 
   useEffect(() => {
+    const element = header.current;
+    if (!element) return;
+    let lastY = Math.max(0, window.scrollY);
+    let frame = 0;
+    delete element.dataset.scrollHidden;
+    const update = () => {
+      frame = 0;
+      const maxY = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+      const y = Math.max(0, Math.min(window.scrollY, maxY));
+      const delta = y - lastY;
+      if (y <= element.offsetHeight || menu.current?.open) {
+        delete element.dataset.scrollHidden;
+        lastY = y;
+      } else if (Math.abs(delta) >= 6) {
+        element.dataset.scrollHidden = String(delta > 0);
+        lastY = y;
+      }
+    };
+    const schedule = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+    window.addEventListener("scroll", schedule, { passive: true });
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener("scroll", schedule);
+      delete element.dataset.scrollHidden;
+    };
+  }, [pathname]);
+
+  useEffect(() => {
     let frame = 0;
     const update = () => {
       frame = 0;
       if (!header.current) return;
-      const logo = header.current.querySelector(".nav-brand")?.getBoundingClientRect();
-      const line = logo ? (logo.top + logo.bottom) / 2 : 44;
+      const logo = header.current.querySelector<HTMLElement>(".nav-brand");
+      // Measure its resting position so slide-out transforms do not change the surface check.
+      const line = logo ? logo.offsetTop + logo.offsetHeight / 2 : 44;
       const light = Array.from(document.querySelectorAll('.home-services, .service-detail, .organization-section, [data-navigation-surface="light"]')).some((section) => {
         const bounds = section.getBoundingClientRect();
         return bounds.top <= line && bounds.bottom > line;
@@ -64,7 +95,7 @@ export default function Navigation() {
   }, [pathname]);
 
   return (
-    <header ref={header} className="navigation" data-critical-viewport>
+    <header ref={header} className="navigation" data-menu-open={menuOpen} data-critical-viewport>
       <Link className="nav-brand" href="/" aria-label="Stratoc home">
         <Image src="/assets/logo-white.png" alt="Stratoc" width={460} height={225} priority unoptimized className="brand-logo" />
       </Link>
