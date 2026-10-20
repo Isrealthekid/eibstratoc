@@ -28,7 +28,7 @@
 .intro h2 {
   max-width: 14ch;
   margin: 0;
-  font-size: clamp(2.25rem, 4.5vw, 4rem);
+  font-size: clamp(2.25rem, calc(4.5 * var(--type-vw)), 4rem);
   font-weight: 400;
   line-height: 1.05;
   letter-spacing: -.055em;
@@ -110,7 +110,7 @@
 .card h3 {
   max-width: 21ch;
   margin: 1.625rem 0 0;
-  font-size: clamp(1.1875rem, 1.6vw, 1.5rem);
+  font-size: clamp(1.1875rem, calc(1.6 * var(--type-vw)), 1.5rem);
   font-weight: 500;
   line-height: 1.18;
   letter-spacing: -.025em;
@@ -182,7 +182,7 @@
 @media (min-width: 1024px) and (max-height: 700px) {
   .intro { top: 4.5rem; }
   .eyebrow { margin-bottom: 1.125rem; }
-  .intro h2 { font-size: clamp(2.125rem, 4vw, 3.625rem); }
+  .intro h2 { font-size: clamp(2.125rem, calc(4 * var(--type-vw)), 3.625rem); }
   .description { margin-top: 1.125rem; }
   .cta { margin-top: 1.75rem; }
 }
@@ -190,7 +190,7 @@
 @media (max-width: 767px) {
   .section { padding-block: 4.5rem; }
   .layout { grid-template-columns: 1fr; gap: 3rem; }
-  .intro h2 { max-width: 17ch; font-size: clamp(2.125rem, 9vw, 3.25rem); }
+  .intro h2 { max-width: 17ch; font-size: clamp(2.125rem, calc(9 * var(--type-vw)), 3.25rem); }
   .cta { margin-top: 2rem; }
   .card, .cardInner { min-height: 17.5rem; }
 }

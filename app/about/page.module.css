@@ -1,17 +1,17 @@
 .page { background: var(--brand-blue); color: var(--foreground); }
 .hero { min-height: 100svh; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; padding: 11.25rem var(--page-gutter) 4.5rem; }
 .eyebrow { margin: 0 0 2rem; font-size: 0.6875rem; letter-spacing: .16em; text-transform: uppercase; }
-.hero h1 { max-width: max(53.125rem, 60%); margin: 0; font-size: clamp(2.5rem, 5.5vw, 5rem); line-height: .98; letter-spacing: -.055em; font-weight: 400; text-wrap: balance; }
-.introduction { max-width: 54ch; margin: 1.75rem 0 0; font-size: clamp(0.875rem, 1.3vw, 1.125rem); line-height: 1.7; color: #d4ddec; }
+.hero h1 { max-width: max(53.125rem, 60%); margin: 0; font-size: clamp(2.5rem, calc(5.5 * var(--type-vw)), 5rem); line-height: .98; letter-spacing: -.055em; font-weight: 400; text-wrap: balance; }
+.introduction { max-width: 54ch; margin: 1.75rem 0 0; font-size: clamp(0.875rem, calc(1.3 * var(--type-vw)), 1.125rem); line-height: 1.7; color: #d4ddec; }
 .content { background: #fff; color: var(--brand-blue); padding-inline: var(--page-gutter); }
 .row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 8%; padding-block: 5rem; border-bottom: 0.0625rem solid #264b8f25; }
-.content h2 { max-width: 18ch; margin: 0; font-size: clamp(1.75rem, 3.2vw, 2.875rem); font-weight: 400; line-height: 1.1; letter-spacing: -.045em; text-wrap: balance; }
-.content p { max-width: 64ch; margin: 0; font-size: clamp(0.875rem, 1.2vw, 1.0625rem); line-height: 1.8; color: #52637b; }
+.content h2 { max-width: 18ch; margin: 0; font-size: clamp(1.75rem, calc(3.2 * var(--type-vw)), 2.875rem); font-weight: 400; line-height: 1.1; letter-spacing: -.045em; text-wrap: balance; }
+.content p { max-width: 64ch; margin: 0; font-size: clamp(0.875rem, calc(1.2 * var(--type-vw)), 1.0625rem); line-height: 1.8; color: #52637b; }
 .content p + p { margin-top: 1.5rem; }
 .purpose { display: grid; grid-template-columns: 1fr 1fr; gap: 8%; padding-block: 4rem; border-bottom: 0.0625rem solid #264b8f25; }
 .purpose h2 { margin-bottom: 1.5rem; }
 .closing { padding: 6rem var(--page-gutter); background: var(--section-grey); color: var(--brand-blue); }
-.closing h2 { max-width: 20ch; margin: 0 0 2.25rem; font-size: clamp(2.25rem, 4.5vw, 4rem); line-height: 1.05; font-weight: 400; letter-spacing: -.05em; text-wrap: balance; }
+.closing h2 { max-width: 20ch; margin: 0 0 2.25rem; font-size: clamp(2.25rem, calc(4.5 * var(--type-vw)), 4rem); line-height: 1.05; font-weight: 400; letter-spacing: -.05em; text-wrap: balance; }
 .cta { display: inline-flex; align-items: center; justify-content: space-between; gap: 2.25rem; padding: 1rem 1.25rem; border-radius: 0.1875rem; background: #fff; color: var(--brand-blue); font-size: 0.75rem; }
 .cta:hover { background: #eeeff2; }
 @media (max-width: 767px) {

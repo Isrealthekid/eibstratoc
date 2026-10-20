@@ -12,7 +12,7 @@ export default function Home() {
       <main className="hero">
         <div className="orbital" aria-hidden="true"><i /><i /><i /></div>
         <div className="hero-content">
-          <h1>Where intelligence meets action</h1>
+          <h1>Where intelligence<br />meets action</h1>
           <p className="hero-subheading">Intelligence. Surveillance. Strategic Operations.</p>
           <Link href="/contact" className="nav-item nav-contact hero-contact">
             Get in touch

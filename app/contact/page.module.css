@@ -23,7 +23,7 @@
 
 .introduction h1 {
   margin: 0 0 1rem;
-  font-size: clamp(2.625rem, 5.5vw, 5rem);
+  font-size: clamp(2.625rem, calc(5.5 * var(--type-vw)), 5rem);
   font-weight: 400;
   line-height: .98;
   letter-spacing: -.055em;
@@ -32,7 +32,7 @@
 .introduction > div:first-child > p {
   max-width: 36ch;
   margin: 0;
-  font-size: clamp(0.875rem, 1.35vw, 1.125rem);
+  font-size: clamp(0.875rem, calc(1.35 * var(--type-vw)), 1.125rem);
   line-height: 1.5;
 }
 
@@ -61,7 +61,7 @@
 
 .enquiry h2 {
   margin: 0 0 1.25rem;
-  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  font-size: clamp(1.25rem, calc(2 * var(--type-vw)), 1.75rem);
   font-weight: 400;
   letter-spacing: -.035em;
 }
@@ -172,7 +172,7 @@
   .page { padding-top: 8.25rem; padding-bottom: 4.375rem; }
   .layout { grid-template-columns: 1fr; gap: 3.75rem; min-height: 0; }
   .introduction { gap: 2.5rem; padding: 0; }
-  .introduction h1 { font-size: clamp(2.625rem, 10vw, 4.25rem); }
+  .introduction h1 { font-size: clamp(2.625rem, calc(10 * var(--type-vw)), 4.25rem); }
   .directContact p { margin-top: 1.25rem; }
 }
 
