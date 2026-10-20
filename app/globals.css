@@ -61,18 +61,18 @@
   mask-image: radial-gradient(
     circle at 50% 50%,
     transparent var(--page-reveal-radius),
-    #000 calc(var(--page-reveal-radius) + 2px)
+    #000 calc(var(--page-reveal-radius) + 0.125rem)
   );
   -webkit-mask-image: radial-gradient(
     circle at 50% 50%,
     transparent var(--page-reveal-radius),
-    #000 calc(var(--page-reveal-radius) + 2px)
+    #000 calc(var(--page-reveal-radius) + 0.125rem)
   );
 }
 .page-transition-circle {
   position: absolute;
   inset: 0;
-  clip-path: circle(0px at 50% 50%);
+  clip-path: circle(0rem at 50% 50%);
 }
 .page-transition-overlay[data-active="true"] .page-transition-circle {
   will-change: clip-path;
@@ -108,7 +108,7 @@
   top: 50%;
   left: 0;
   right: 0;
-  height: 1px;
+  height: 0.0625rem;
   background: #ffffff25;
 }
 .site-footer-top > * {
@@ -120,14 +120,14 @@
   background: #101111;
 }
 .site-footer-logo {
-  width: 88px;
+  width: 5.5rem;
   height: auto;
 }
 .site-footer-action {
   justify-self: start;
   background: #343535;
   padding: 0.8125rem 1rem;
-  border-radius: 3px;
+  border-radius: 0.1875rem;
   font-size: 0.75rem;
 }
 .site-footer-contact {
@@ -165,8 +165,8 @@
   color: var(--brand-blue) !important;
 }
 .site-footer a:focus-visible {
-  outline: 2px solid #fff;
-  outline-offset: 5px;
+  outline: 0.125rem solid #fff;
+  outline-offset: 0.3125rem;
 }
 .site-footer-bottom {
   display: flex;
@@ -203,7 +203,7 @@
     padding-inline: 0.5rem;
   }
   .site-footer-logo {
-    width: 64px;
+    width: 4rem;
   }
   .site-footer-action {
     font-size: 0.625rem;
@@ -251,7 +251,15 @@
   min-height: 100svh;
 }
 html {
+  font-size: 100%;
   scroll-behavior: smooth;
+}
+/* Keep the 1440px desktop proportions as the CSS viewport grows.
+   One rem equals 16px at 1440px and scales with the viewport above it. */
+@media (min-width: 1440px) {
+  html {
+    font-size: calc(100vw / 90);
+  }
 }
 body {
   margin: 0;
@@ -273,8 +281,8 @@ a {
   text-decoration: none;
 }
 a:focus-visible {
-  outline: 2px solid #d4ddbf;
-  outline-offset: 8px;
+  outline: 0.125rem solid #d4ddbf;
+  outline-offset: 0.5rem;
 }
 .preloader {
   position: fixed;
@@ -313,7 +321,7 @@ a:focus-visible {
 }
 .navigation {
   margin-inline: auto;
-  min-height: 88px;
+  min-height: 5.5rem;
   padding: 0.875rem var(--page-gutter);
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -333,7 +341,7 @@ a:focus-visible {
   justify-self: start;
 }
 .brand-logo {
-  width: 88px;
+  width: 5.5rem;
   height: auto;
 }
 .navigation[data-surface="light"] .brand-logo {
@@ -345,12 +353,12 @@ a:focus-visible {
   align-items: center;
   gap: 0.1875rem;
   padding: 0.25rem;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   background: rgb(9 18 29 / 72%);
-  border: 1px solid rgb(255 255 255 / 14%);
-  backdrop-filter: blur(20px) saturate(125%);
-  -webkit-backdrop-filter: blur(20px) saturate(125%);
-  box-shadow: inset 0 1px 0 rgb(255 255 255 / 8%);
+  border: 0.0625rem solid rgb(255 255 255 / 14%);
+  backdrop-filter: blur(1.25rem) saturate(125%);
+  -webkit-backdrop-filter: blur(1.25rem) saturate(125%);
+  box-shadow: inset 0 0.0625rem 0 rgb(255 255 255 / 8%);
 }
 .nav-primary {
   justify-self: center;
@@ -359,13 +367,13 @@ a:focus-visible {
   justify-self: end;
 }
 .nav-item {
-  min-height: 36px;
+  min-height: 2.25rem;
   padding: 0 1rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   white-space: nowrap;
-  border-radius: 2px;
+  border-radius: 0.125rem;
   font-size: 0.6875rem;
   font-weight: 500;
   line-height: 1.2;
@@ -385,8 +393,8 @@ a:focus-visible {
   background: #eeeff2;
 }
 .nav-item:focus-visible {
-  outline: 2px solid white;
-  outline-offset: 3px;
+  outline: 0.125rem solid white;
+  outline-offset: 0.1875rem;
 }
 .nav-contact {
   background: #fff;
@@ -400,16 +408,16 @@ a:focus-visible {
 .nav-arrow {
   display: grid;
   place-items: center;
-  width: 28px;
-  height: 28px;
+  width: 1.75rem;
+  height: 1.75rem;
   background: var(--brand-blue);
   color: #fff;
-  border: 1px solid rgb(255 255 255 / 35%);
-  border-radius: 2px;
+  border: 0.0625rem solid rgb(255 255 255 / 35%);
+  border-radius: 0.125rem;
 }
 .nav-arrow svg {
-  width: 19px;
-  height: 19px;
+  width: 1.1875rem;
+  height: 1.1875rem;
 }
 .nav-wave {
   width: auto;
@@ -447,7 +455,7 @@ a:focus-visible {
 }
 .hero-contact {
   margin-top: 1.75rem;
-  min-height: 44px;
+  min-height: 2.75rem;
   font-size: 0.75rem;
   gap: 1.75rem;
   padding: 0.3125rem 0.3125rem 0.3125rem 1.125rem;
@@ -461,7 +469,7 @@ a:focus-visible {
 .metrics-section {
   padding: 1.75rem var(--page-gutter);
   background: var(--brand-blue);
-  border-block: 1px solid rgb(255 255 255 / 20%);
+  border-block: 0.0625rem solid rgb(255 255 255 / 20%);
 }
 .metrics-marquee {
   mask-image: linear-gradient(
@@ -481,10 +489,10 @@ a:focus-visible {
   justify-content: flex-start;
   flex-shrink: 0;
   width: clamp(17.5rem, 25%, 25rem);
-  min-height: 126px;
+  min-height: 7.875rem;
   margin: 0;
   padding: 0.5rem 1.75rem;
-  border-right: 1px solid rgb(255 255 255 / 20%);
+  border-right: 0.0625rem solid rgb(255 255 255 / 20%);
 }
 .metric-value {
   order: -1;
@@ -509,7 +517,7 @@ a:focus-visible {
     padding-block: 1.25rem;
   }
   .metric {
-    width: 260px;
+    width: 16.25rem;
     padding-inline: 1.25rem;
   }
   .metric-description {
@@ -532,26 +540,26 @@ a:focus-visible {
 }
 .orbital {
   position: absolute;
-  width: 640px;
-  height: 640px;
-  right: -200px;
-  top: 25px;
-  border: 1px solid #aabaac22;
+  width: 40rem;
+  height: 40rem;
+  right: -12.5rem;
+  top: 1.5625rem;
+  border: 0.0625rem solid #aabaac22;
   border-radius: 50%;
   transform: rotate(-30deg);
   pointer-events: none;
 }
 .orbital i {
   position: absolute;
-  inset: 45px;
-  border: 1px solid #aabaac22;
+  inset: 2.8125rem;
+  border: 0.0625rem solid #aabaac22;
   border-radius: 50%;
 }
 .orbital i:nth-child(2) {
-  inset: 100px;
+  inset: 6.25rem;
 }
 .orbital i:nth-child(3) {
-  inset: -45px 230px;
+  inset: -2.8125rem 14.375rem;
 }
 .intelligence-intro {
   position: relative;
@@ -656,8 +664,8 @@ a:focus-visible {
   );
 }
 .marquee:focus-visible {
-  outline: 2px solid var(--brand-blue);
-  outline-offset: -2px;
+  outline: 0.125rem solid var(--brand-blue);
+  outline-offset: -0.125rem;
 }
 .marquee-track {
   display: flex;
@@ -675,13 +683,13 @@ a:focus-visible {
   display: grid;
   place-items: center;
   width: 17.5rem;
-  height: 96px;
+  height: 6rem;
   padding: 0.75rem 1.25rem;
 }
 .organization-image {
   position: relative;
-  width: 140px;
-  height: 68px;
+  width: 8.75rem;
+  height: 4.25rem;
 }
 .organization-image img {
   object-fit: contain;
@@ -691,8 +699,8 @@ a:focus-visible {
 }
 .organization-image-onsa,
 .organization-image-police {
-  width: 68px;
-  height: 68px;
+  width: 4.25rem;
+  height: 4.25rem;
 }
 .organization-image-onsa {
   clip-path: circle(49%);
@@ -725,17 +733,17 @@ a:focus-visible {
     font-size: 0.625rem;
   }
   .organization-logo {
-    width: 150px;
-    height: 80px;
+    width: 9.375rem;
+    height: 5rem;
     padding: 0.625rem 1rem;
   }
   .organization-image {
-    width: 110px;
-    height: 56px;
+    width: 6.875rem;
+    height: 3.5rem;
   }
   .organization-image-onsa,
   .organization-image-police {
-    width: 56px;
+    width: 3.5rem;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -803,8 +811,8 @@ a:focus-visible {
 }
 .stacking-card-stage {
   position: sticky;
-  top: 110px;
-  height: calc(100svh - 110px);
+  top: 6.875rem;
+  height: calc(100svh - 6.875rem);
   display: flex;
   align-items: flex-start;
 }
@@ -819,7 +827,7 @@ a:focus-visible {
   height: clamp(22.5rem, 30vw, 27.5rem);
   background: #111;
   color: #f7f7f7;
-  border-radius: 6px;
+  border-radius: 0.375rem;
   overflow: hidden;
 }
 .stacking-card::before {
@@ -846,7 +854,7 @@ a:focus-visible {
 }
 .stacking-card-summary {
   margin-top: auto;
-  padding-top: 24px;
+  padding-top: 1.5rem;
 }
 .stacking-card-copy p {
   max-width: 56ch;
@@ -878,7 +886,7 @@ a:focus-visible {
   justify-content: space-between;
   gap: 1.5rem;
   padding-block: 0.625rem;
-  border-bottom: 1px solid #264b8f50;
+  border-bottom: 0.0625rem solid #264b8f50;
   font-size: 0.75rem;
   line-height: 1.5;
 }
@@ -887,17 +895,17 @@ a:focus-visible {
   transition: transform 180ms ease;
 }
 .stacking-card-link:hover svg {
-  transform: translate(2px, -2px);
+  transform: translate(0.125rem, -0.125rem);
 }
 .stacking-card-link:focus-visible {
   outline-color: var(--brand-blue);
-  outline-offset: 4px;
+  outline-offset: 0.25rem;
 }
 .stacking-card-art {
   position: relative;
   overflow: hidden;
   background: #202020;
-  border-radius: 4px;
+  border-radius: 0.25rem;
 }
 .stacking-card-art img {
   object-fit: cover;
@@ -940,7 +948,7 @@ a:focus-visible {
 .service-detail-image {
   width: 100%;
   height: auto;
-  border-radius: 12px;
+  border-radius: 0.75rem;
 }
 @media (max-width: 1023px),
   (max-height: 580px),
@@ -957,7 +965,7 @@ a:focus-visible {
   }
   .stacking-card {
     height: auto;
-    min-height: 360px;
+    min-height: 22.5rem;
   }
 }
 @media (max-width: 767px) {
@@ -981,17 +989,17 @@ a:focus-visible {
     grid-row: auto;
   }
   .stacking-card-copy {
-    min-height: 260px;
+    min-height: 16.25rem;
   }
   .stacking-card-copy p {
     font-size: 0.8125rem;
   }
   .stacking-card-art {
-    min-height: 210px;
+    min-height: 13.125rem;
     aspect-ratio: 4 / 3;
   }
   .service-detail {
-    padding-top: 180px;
+    padding-top: 11.25rem;
   }
   .service-detail-grid {
     grid-template-columns: 1fr;
@@ -1018,7 +1026,7 @@ a:focus-visible {
     grid-row: 2;
   }
   .hero {
-    padding-top: 200px;
+    padding-top: 12.5rem;
   }
 }
 @media (max-width: 600px) {
@@ -1027,7 +1035,7 @@ a:focus-visible {
     gap: 0.75rem;
   }
   .brand-logo {
-    width: 68px;
+    width: 4.25rem;
   }
   .nav-item {
     padding-inline: 0.75rem;
@@ -1050,7 +1058,7 @@ a:focus-visible {
     padding: 11.25rem var(--page-gutter) 2.5rem;
   }
   .orbital {
-    right: -470px;
+    right: -29.375rem;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -1091,11 +1099,11 @@ a:focus-visible {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 52px;
+  min-height: 3.25rem;
   flex-shrink: 0;
 }
 .mobile-menu-logo {
-  width: 68px;
+  width: 4.25rem;
   height: auto;
 }
 .mobile-menu-close,
@@ -1103,10 +1111,10 @@ a:focus-visible {
   align-items: center;
   justify-content: center;
   gap: 0.875rem;
-  min-height: 44px;
+  min-height: 2.75rem;
   padding: 0.625rem 0.875rem;
-  border: 1px solid #ffffff30;
-  border-radius: 4px;
+  border: 0.0625rem solid #ffffff30;
+  border-radius: 0.25rem;
   background: #ffffff12;
   color: #fff;
   font: inherit;
@@ -1115,8 +1123,8 @@ a:focus-visible {
 }
 .mobile-menu-toggle {
   background: rgb(9 18 29 / 72%);
-  backdrop-filter: blur(20px) saturate(125%);
-  -webkit-backdrop-filter: blur(20px) saturate(125%);
+  backdrop-filter: blur(1.25rem) saturate(125%);
+  -webkit-backdrop-filter: blur(1.25rem) saturate(125%);
 }
 .mobile-menu-close {
   display: inline-flex;
@@ -1132,19 +1140,19 @@ a:focus-visible {
   align-items: center;
   justify-content: space-between;
   gap: 1.25rem;
-  min-height: 52px;
+  min-height: 3.25rem;
   padding: 0.625rem 0;
   font-size: clamp(1.75rem, 7vw, 2.625rem);
   line-height: 1.15;
   letter-spacing: -0.04em;
-  border-bottom: 1px solid #ffffff25;
+  border-bottom: 0.0625rem solid #ffffff25;
 }
 .mobile-menu-links a[aria-current="page"] {
   color: #d4ddbf;
 }
 .mobile-menu-footer {
   margin: 0;
-  padding-top: 12px;
+  padding-top: 0.75rem;
   font-size: 0.625rem;
   line-height: 1.6;
   opacity: 0.7;
@@ -1152,8 +1160,8 @@ a:focus-visible {
 .mobile-menu a:focus-visible,
 .mobile-menu button:focus-visible,
 .mobile-menu-toggle:focus-visible {
-  outline: 2px solid #fff;
-  outline-offset: 3px;
+  outline: 0.125rem solid #fff;
+  outline-offset: 0.1875rem;
 }
 html:has(.mobile-menu[open]),
 body:has(.mobile-menu[open]) {
@@ -1163,7 +1171,7 @@ body:has(.mobile-menu[open]) {
 @media (max-width: 767px) {
   .navigation {
     grid-template-columns: 1fr auto;
-    min-height: 76px;
+    min-height: 4.75rem;
   }
   .navigation > .nav-primary,
   .navigation > .nav-secondary {
@@ -1196,7 +1204,7 @@ body:has(.services-page) {
   align-items: start;
 }
 .services-intro {
-  padding-top: 25px;
+  padding-top: 1.5625rem;
 }
 .services-intro > p {
   color: #8b8b8b;
@@ -1241,27 +1249,27 @@ body:has(.services-page) {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 440px;
+  min-height: 27.5rem;
   aspect-ratio: 0.81;
   background: #101010;
-  border: 1px solid #ffffff20;
-  border-radius: 12px;
+  border: 0.0625rem solid #ffffff20;
+  border-radius: 0.75rem;
   overflow: hidden;
   transform: rotate(var(--card-tilt));
   transition: box-shadow 240ms ease;
 }
 .service-card:hover {
-  box-shadow: 0 0 35px #ffffff12;
+  box-shadow: 0 0 2.1875rem #ffffff12;
 }
 .service-card:focus-visible {
-  outline: 2px solid #fff;
-  outline-offset: 8px;
+  outline: 0.125rem solid #fff;
+  outline-offset: 0.5rem;
 }
 .service-card-top {
   position: absolute;
-  top: 12px;
-  left: 16px;
-  right: 10px;
+  top: 0.75rem;
+  left: 1rem;
+  right: 0.625rem;
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -1269,7 +1277,7 @@ body:has(.services-page) {
 }
 .service-card-top > span:first-child {
   background: #ffffff0d;
-  border: 1px solid #ffffff18;
+  border: 0.0625rem solid #ffffff18;
   color: #cecece;
   padding: 0.3125rem 0.4375rem;
   font-size: 0.4375rem;
@@ -1279,12 +1287,12 @@ body:has(.services-page) {
 .service-card-arrow {
   background: #ffffff0c;
   color: #eee;
-  border: 1px solid #ffffff30;
-  border-radius: 4px;
+  border: 0.0625rem solid #ffffff30;
+  border-radius: 0.25rem;
   display: grid;
   place-items: center;
-  width: 30px;
-  height: 32px;
+  width: 1.875rem;
+  height: 2rem;
 }
 .service-art {
   display: block;
@@ -1330,7 +1338,7 @@ body:has(.services-page) {
   align-items: flex-start;
   gap: 1.75rem;
   min-height: 100svh;
-  border-top: 1px solid #ffffff30;
+  border-top: 0.0625rem solid #ffffff30;
   padding: 10rem 0 5rem;
 }
 .services-end h2 {
@@ -1354,7 +1362,7 @@ body:has(.services-page) {
 @media (max-width: 1000px) {
   .services-page {
     padding-inline: var(--page-gutter);
-    padding-top: 180px;
+    padding-top: 11.25rem;
   }
   .services-grid {
     gap: 5.625rem 5%;
@@ -1389,7 +1397,7 @@ body:has(.services-page) {
     transform: none !important;
   }
   .service-card {
-    min-height: 410px;
+    min-height: 25.625rem;
     max-width: 25rem;
     margin-inline: auto;
   }
@@ -1435,7 +1443,7 @@ body:has(.services-page) {
 }
 .services-cinematic .services-intro {
   position: absolute;
-  top: 120px;
+  top: 7.5rem;
   left: var(--page-gutter);
   padding: 0;
   width: 32%;
@@ -1450,7 +1458,7 @@ body:has(.services-page) {
 }
 .services-cinematic .service-card {
   min-height: 0;
-  height: min(76svh, 510px);
+  height: min(76svh, 31.875rem);
   aspect-ratio: auto;
 }
 .services-cinematic .service-art {
@@ -1459,15 +1467,15 @@ body:has(.services-page) {
   flex-shrink: 1;
 }
 .services-cinematic .service-card-copy {
-  padding-top: 8px;
+  padding-top: 0.5rem;
 }
 .services-cinematic .services-progress {
   display: block;
   position: absolute;
-  bottom: 24px;
+  bottom: 1.5rem;
   left: 38%;
   width: 24%;
-  height: 1px;
+  height: 0.0625rem;
   background: #ffffff35;
 }
 .services-progress-fill {
@@ -1484,7 +1492,7 @@ body:has(.services-page) {
 }
 @media (min-width: 768px) and (max-width: 1000px) {
   .services-cinematic .services-intro {
-    top: 165px;
+    top: 10.3125rem;
   }
   .services-cinematic .services-intro h1 {
     font-size: 2.375rem;
@@ -1495,7 +1503,7 @@ body:has(.services-page) {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   background: radial-gradient(
     ellipse at 8% 0%,
     #303030 0%,
@@ -1519,21 +1527,21 @@ body:has(.services-page) {
   top: -36%;
   left: -20%;
   background: linear-gradient(100deg, transparent, #ffffff20, transparent);
-  filter: blur(22px);
+  filter: blur(1.375rem);
   transform: rotate(-35deg);
 }
 .glowing-card-dot {
   position: absolute;
   top: 0;
   left: 0;
-  width: 5px;
-  height: 5px;
+  width: 0.3125rem;
+  height: 0.3125rem;
   border-radius: 50%;
   background: #fff;
   box-shadow:
-    0 0 9px 3px #ffffff70,
-    0 0 24px 5px #ffffff25;
-  offset-path: inset(3px round 10px);
+    0 0 0.5625rem 0.1875rem #ffffff70,
+    0 0 1.5rem 0.3125rem #ffffff25;
+  offset-path: inset(0.1875rem round 0.625rem);
   animation: moveDot 10s linear infinite;
   z-index: 3;
   pointer-events: none;
@@ -1553,13 +1561,13 @@ body:has(.services-page) {
   background: linear-gradient(90deg, transparent, #ffffff85, transparent);
 }
 .glowing-card-top {
-  height: 1px;
+  height: 0.0625rem;
   top: 0;
   left: 8%;
   width: 84%;
 }
 .glowing-card-bottom {
-  height: 1px;
+  height: 0.0625rem;
   bottom: 0;
   left: 20%;
   width: 60%;
@@ -1567,7 +1575,7 @@ body:has(.services-page) {
 }
 .glowing-card-left,
 .glowing-card-right {
-  width: 1px;
+  width: 0.0625rem;
   height: 70%;
   top: 5%;
   background: linear-gradient(transparent, #ffffff65, transparent);
@@ -1584,7 +1592,7 @@ body:has(.services-page) {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 300px;
+  min-height: 18.75rem;
   gap: 0.75rem;
 }
 .glowing-card-demo strong {

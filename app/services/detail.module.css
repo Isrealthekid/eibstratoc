@@ -8,22 +8,22 @@
 .visual { position: relative; height: clamp(17.5rem, 45vw, 40.625rem); }
 .visual img { object-fit: cover; }
 .content { padding: 3.125rem var(--page-gutter) 5.625rem; }
-.section { display: grid; grid-template-columns: 1fr 1fr; gap: 8%; padding-block: 3.375rem; border-bottom: 1px solid #dde3ea; }
+.section { display: grid; grid-template-columns: 1fr 1fr; gap: 8%; padding-block: 3.375rem; border-bottom: 0.0625rem solid #dde3ea; }
 .sectionHeading { display: flex; align-items: baseline; gap: 1.5rem; }
 .number { color: #8392a2; font-family: inherit; font-size: 0.6875rem; }
 .section h2 { max-width: 24ch; font-size: clamp(1.625rem, 2.8vw, 2.625rem); font-weight: 400; line-height: 1.15; letter-spacing: -.04em; margin: 0; }
 .sectionCopy { color: #526170; font-size: 1rem; line-height: 1.8; }
 .sectionCopy p { margin: 0 0 1.25rem; }
 .sectionCopy p:last-child { margin-bottom: 0; }
-.sectionCopy ul { margin: 0; padding-left: 20px; }
-.sectionCopy li { padding: 0.5rem 0 0.5rem 0.5rem; border-bottom: 1px solid #eef0f3; }
+.sectionCopy ul { margin: 0; padding-left: 1.25rem; }
+.sectionCopy li { padding: 0.5rem 0 0.5rem 0.5rem; border-bottom: 0.0625rem solid #eef0f3; }
 .sectionCopy li::marker { color: var(--brand-blue); }
 .closing { background: var(--section-grey); color: var(--brand-blue); padding: 5.625rem var(--page-gutter) 2.5rem; }
 .closing h2 { font-size: clamp(2.5rem, 5.5vw, 5rem); line-height: 1.05; letter-spacing: -.05em; margin: 0 0 2rem; font-weight: 400; }
-.next { margin-top: 5rem; border-top: 1px solid #264b8f30; padding-top: 30px; display: flex; align-items: center; gap: 1.5rem; font-size: clamp(1.25rem, 2.8vw, 2.25rem); }
+.next { margin-top: 5rem; border-top: 0.0625rem solid #264b8f30; padding-top: 1.875rem; display: flex; align-items: center; gap: 1.5rem; font-size: clamp(1.25rem, 2.8vw, 2.25rem); }
 .next span { margin-right: auto; font-size: 0.6875rem; text-transform: none; letter-spacing: .1em; color: var(--brand-blue); }
 @media(max-width: 767px) {
- .hero { padding-top: 120px; padding-bottom: 48px; }
+ .hero { padding-top: 7.5rem; padding-bottom: 3rem; }
  .back { margin-bottom: 3rem; }
  .hero h1 { font-size: clamp(2.5rem, 10vw, 4.0625rem); }
  .introduction { margin-top: 1.875rem; }
@@ -31,12 +31,12 @@
  .section { grid-template-columns: 1fr; gap: 1.5rem; padding-block: 2.25rem; }
  .sectionHeading { gap: 1rem; }
  .sectionCopy { font-size: 0.9375rem; }
- .closing { padding-top: 56px; }
+ .closing { padding-top: 3.5rem; }
  .next { flex-wrap: wrap; margin-top: 3.5rem; gap: 1rem; }
  .next span { width: 100%; }
 }
-.button { display: inline-flex; align-items: center; justify-content: space-between; gap: 1.75rem; min-height: 44px; padding: 0.3125rem 0.3125rem 0.3125rem 1.125rem; border-radius: 2px; background: var(--brand-blue); color: #fff; font-family: inherit; font-size: 0.75rem; font-weight: 400; line-height: 1.2; }
-.button svg { box-sizing: content-box; flex-shrink: 0; width: 19px; height: 19px; padding: 0.3125rem; background: #fff; color: var(--brand-blue); border: 1px solid #ffffff59; border-radius: 2px; }
+.button { display: inline-flex; align-items: center; justify-content: space-between; gap: 1.75rem; min-height: 2.75rem; padding: 0.3125rem 0.3125rem 0.3125rem 1.125rem; border-radius: 0.125rem; background: var(--brand-blue); color: #fff; font-family: inherit; font-size: 0.75rem; font-weight: 400; line-height: 1.2; }
+.button svg { box-sizing: content-box; flex-shrink: 0; width: 1.1875rem; height: 1.1875rem; padding: 0.3125rem; background: #fff; color: var(--brand-blue); border: 0.0625rem solid #ffffff59; border-radius: 0.125rem; }
 .button:hover { background: var(--brand-blue); }
 .hero .button { background: #fff; color: var(--brand-blue); }
 .hero .button svg { background: var(--brand-blue); color: #fff; }

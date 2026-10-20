@@ -21,9 +21,9 @@ export function ContactPage() {
 
       <div className="mx-auto min-h-screen max-w-6xl border-white/20 lg:border-x">
         <header className="px-6 pt-40 pb-16 md:px-8 md:pt-48 md:pb-20">
-          <p className="mb-7 text-[11px] leading-normal tracking-[0.16em] text-blue-100">CONTACT EIB STRATOC</p>
-          <h1 className="text-[clamp(40px,5.5vw,80px)] font-normal leading-[0.98] tracking-[-0.055em]">Contact us</h1>
-          <p className="mt-7 max-w-[54ch] text-[clamp(14px,1.3vw,18px)] leading-[1.7] text-blue-100">
+          <p className="mb-7 text-[0.6875rem] leading-normal tracking-[0.16em] text-blue-100">CONTACT EIB STRATOC</p>
+          <h1 className="text-[clamp(2.5rem,5.5vw,5rem)] font-normal leading-[0.98] tracking-[-0.055em]">Contact us</h1>
+          <p className="mt-7 max-w-[54ch] text-[clamp(0.875rem,1.3vw,1.125rem)] leading-[1.7] text-blue-100">
             Tell us what you need to protect. Let’s discuss your intelligence,
             surveillance and operational support requirements.
           </p>
@@ -32,16 +32,16 @@ export function ContactPage() {
         <BorderSeparator />
         <div className="grid md:grid-cols-3">
           <Box icon={Mail} title="Email" description="For general enquiries and partnerships.">
-            <a href={`mailto:${APP_EMAIL}`} className="min-w-0 break-all text-[clamp(14px,1.2vw,17px)] leading-[1.8] hover:underline">
+            <a href={`mailto:${APP_EMAIL}`} className="min-w-0 break-all text-[clamp(0.875rem,1.2vw,1.0625rem)] leading-[1.8] hover:underline">
               {APP_EMAIL}
             </a>
             <CopyButton text={APP_EMAIL} />
           </Box>
           <Box icon={MapPin} title="Location" description="Home to our satellite teleport facility.">
-            <p className="text-[clamp(14px,1.2vw,17px)] leading-[1.8]">Idu, Abuja<br />Nigeria</p>
+            <p className="text-[clamp(0.875rem,1.2vw,1.0625rem)] leading-[1.8]">Idu, Abuja<br />Nigeria</p>
           </Box>
           <Box icon={Star} title="Social media" description="Connect with us on Instagram." className="border-b-0 md:border-r-0">
-            <a href="https://www.instagram.com/eibstractorsac/" target="_blank" rel="noopener noreferrer" className="flex min-w-0 items-center gap-2 text-[clamp(14px,1.2vw,17px)] leading-[1.8] hover:underline">
+            <a href="https://www.instagram.com/eibstractorsac/" target="_blank" rel="noopener noreferrer" className="flex min-w-0 items-center gap-2 text-[clamp(0.875rem,1.2vw,1.0625rem)] leading-[1.8] hover:underline">
               <span className="break-all">eibstractorsac</span>
               <ArrowUpRight className="size-4 shrink-0" aria-hidden="true" />
             </a>
@@ -50,10 +50,10 @@ export function ContactPage() {
         <BorderSeparator />
 
         <section aria-labelledby="connect-heading" className="relative flex min-h-80 items-center justify-center px-6 py-16">
-          <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.3)_1px,transparent_1px)] bg-[size:32px_32px] [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)]" />
+          <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.3)_0.0625rem,transparent_0.0625rem)] bg-[size:32px_2rem] [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)]" />
           <div className="relative space-y-6 text-center">
-            <h2 id="connect-heading" className="text-[clamp(28px,3.2vw,46px)] font-normal leading-[1.1] tracking-[-0.045em]">Let’s connect</h2>
-            <p className="text-[clamp(14px,1.2vw,17px)] leading-[1.8] text-blue-100">Start a conversation. Explore what we do.</p>
+            <h2 id="connect-heading" className="text-[clamp(1.75rem,3.2vw,2.875rem)] font-normal leading-[1.1] tracking-[-0.045em]">Let’s connect</h2>
+            <p className="text-[clamp(0.875rem,1.2vw,1.0625rem)] leading-[1.8] text-blue-100">Start a conversation. Explore what we do.</p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <a href={`mailto:${APP_EMAIL}`} className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/25 bg-white/5 px-5 py-2 text-xs leading-[1.2] transition-colors hover:bg-white/15">
                 <Mail className="size-4" aria-hidden="true" />Email our team
@@ -88,7 +88,7 @@ function Box({ icon: Icon, title, description, className, children, ...props }: 
       </div>
       <div className="flex min-h-40 flex-1 items-center gap-1 px-5 py-10">{children}</div>
       <div className="border-t border-white/20 p-5">
-        <p className="text-[13px] leading-[1.6] text-blue-100">{description}</p>
+        <p className="text-[0.8125rem] leading-[1.6] text-blue-100">{description}</p>
       </div>
     </section>
   );

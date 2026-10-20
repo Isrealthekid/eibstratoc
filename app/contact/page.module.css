@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
   gap: clamp(2.5rem, 7%, 7.5rem);
-  min-height: min(610px, calc(100svh - 250px));
+  min-height: min(38.125rem, calc(100svh - 15.625rem));
 }
 
 .introduction {
@@ -48,7 +48,7 @@
   font-size: 0.875rem;
   text-decoration: underline;
   text-decoration-color: rgb(255 255 255 / 48%);
-  text-underline-offset: 4px;
+  text-underline-offset: 0.25rem;
 }
 
 .directContact p {
@@ -82,8 +82,8 @@
 
 .field input,
 .field textarea {
-  border: 1px solid transparent;
-  border-radius: 3px;
+  border: 0.0625rem solid transparent;
+  border-radius: 0.1875rem;
   padding: 1rem;
   background: #173d7d;
   color: #fff;
@@ -95,11 +95,11 @@
 }
 
 .field input {
-  min-height: 48px;
+  min-height: 3rem;
 }
 
 .field textarea {
-  min-height: 204px;
+  min-height: 12.75rem;
   resize: vertical;
 }
 
@@ -126,8 +126,8 @@
 
 .visuallyHidden {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  width: 0.0625rem;
+  height: 0.0625rem;
   padding: 0;
   margin: -0.0625rem;
   overflow: hidden;
@@ -145,7 +145,7 @@
 }
 
 .submit {
-  min-height: 44px;
+  min-height: 2.75rem;
   padding: 0.3125rem 0.3125rem 0.3125rem 1.125rem;
   gap: 2.375rem;
   border: 0;
@@ -156,8 +156,8 @@
 }
 
 .submit:focus-visible {
-  outline: 2px solid #fff;
-  outline-offset: 4px;
+  outline: 0.125rem solid #fff;
+  outline-offset: 0.25rem;
 }
 
 .formFooter p {
@@ -169,7 +169,7 @@
 }
 
 @media (max-width: 767px) {
-  .page { padding-top: 132px; padding-bottom: 70px; }
+  .page { padding-top: 8.25rem; padding-bottom: 4.375rem; }
   .layout { grid-template-columns: 1fr; gap: 3.75rem; min-height: 0; }
   .introduction { gap: 2.5rem; padding: 0; }
   .introduction h1 { font-size: clamp(2.625rem, 10vw, 4.25rem); }
@@ -178,6 +178,6 @@
 
 @media (max-width: 440px) {
   .fields { grid-template-columns: 1fr; gap: 0.625rem; }
-  .field textarea { min-height: 190px; }
+  .field textarea { min-height: 11.875rem; }
   .formFooter { align-items: flex-start; flex-direction: column; }
 }
