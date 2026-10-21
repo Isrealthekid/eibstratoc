@@ -7,33 +7,22 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { services } from "@/lib/services";
 import { GlowingCard } from "@/components/ui/glowing-card";
 
-const blueprintAssets = ["uav", "gis", "cctv", "humint", "satellite", "field-reports", "iot", "osint", "elint"];
 
-const services = [
-  { title: "UAV surveillance operations", category: "AERIAL", description: "An elevated perspective. A clearer understanding of the ground below." },
-  { title: "Geographic Information Systems (GIS)", category: "GEOSPATIAL", description: "Connecting information to location, context, and the bigger picture." },
-  { title: "CCTV and remote surveillance systems", category: "SURVEILLANCE", description: "Visibility across sites, infrastructure, and remote environments." },
-  { title: "Human Intelligence (HUMINT)", category: "HUMAN INTELLIGENCE", description: "Human perspectives that bring depth and context to information." },
-  { title: "Satellite imagery", category: "SPACE", description: "A wider view of changing landscapes and areas of interest." },
-  { title: "Operational field reports", category: "FIELD INTELLIGENCE", description: "Observations from the field, brought together for informed decisions." },
-  { title: "Sensor and IoT networks", category: "CONNECTED SYSTEMS", description: "Connecting distributed signals to a shared operational picture." },
-  { title: "Open Source Intelligence (OSINT)", category: "OPEN SOURCE", description: "Finding context and meaningful connections in public information." },
-  { title: "Electronic Intelligence (ELINT)", category: "SIGNALS", description: "Understanding the electronic environment through signal analysis." },
-];
 
 function ServiceCard({ index }: { index: number }) {
   const service = services[index];
   const tilt = [0, 1.5, -1.8][index % 3];
   return (
     <article className="service-card-wrap" style={{ "--card-tilt": `${tilt}deg` } as CSSProperties}>
-      <Link href={`/contact?service=${encodeURIComponent(service.title)}`} className="service-card" aria-label={`Get in touch about ${service.title}`}>
+      <Link href={`/services/${service.slug}`} className="service-card" aria-label={service.linkLabel}>
         <GlowingCard className="service-card-surface">
-        <div className="service-card-top"><span>{service.category}</span><span className="service-card-arrow"><ArrowUpRight size={20} aria-hidden="true" /></span></div>
-        <Image className="service-art service-blueprint" src={`/assets/blueprints/${blueprintAssets[index]}.webp`} alt="" width={768} height={768} sizes="(max-width: 767px) 86vw, 390px" loading={index < 2 ? "eager" : "lazy"} />
+        <div className="service-card-top"><span>Our services</span><span className="service-card-arrow"><ArrowUpRight size={20} aria-hidden="true" /></span></div>
+        <Image className="service-art service-blueprint" src={service.image} alt={service.imageAlt} width={768} height={768} sizes="(max-width: 767px) 86vw, 390px" loading={index < 2 ? "eager" : "lazy"} />
         <div className="service-card-copy"><h2>{service.title}</h2><p>{service.description}</p></div>
-        <span className="service-number" aria-hidden="true">{String(index + 1).padStart(2, "0")} / 09</span>
+        <span className="service-number" aria-hidden="true">{String(index + 1).padStart(2, "0")} / {String(services.length).padStart(2, "0")}</span>
         </GlowingCard>
       </Link>
     </article>
@@ -141,7 +130,7 @@ export default function ServicesCards() {
       <div className="services-track">
       <div className="services-stage">
       <div className="services-grid">
-        <header className="services-intro"><p>OUR CAPABILITIES</p><h1>Intelligence <br />in action.</h1><span>Nine perspectives.<br />One connected picture.</span><div className="services-scroll">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></div></header>
+        <header className="services-intro"><p>OUR CAPABILITIES</p><h1>Intelligence <br />in action.</h1><span>Six capabilities.<br />One connected picture.</span><div className="services-scroll">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></div></header>
         {services.map((service, index) => <ServiceCard key={service.title} index={index} />)}
       </div>
       <div className="services-progress" aria-hidden="true"><span className="services-progress-fill" /></div>

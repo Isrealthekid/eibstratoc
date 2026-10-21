@@ -5,12 +5,13 @@ import OrganizationMarquee from "@/components/organization-marquee";
 import MetricsMarquee from "@/components/metrics-marquee";
 import HomeServices from "@/components/home-services";
 import ProjectsImpact from "@/components/projects-impact";
+import HeroVideo from "@/components/hero-video";
 
 export default function Home() {
   return (
     <div className="homepage" data-critical-viewport>
       <main className="hero">
-        <div className="orbital" aria-hidden="true"><i /><i /><i /></div>
+        <HeroVideo />
         <div className="hero-content">
           <h1>Where intelligence<br />meets action</h1>
           <p className="hero-subheading">Intelligence. Surveillance. Strategic Operations.</p>

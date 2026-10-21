@@ -17,8 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const service = services.find((item) => item.slug === slug);
   if (!service) notFound();
-  const copy = details[service.slug as keyof typeof details];
-  return { title: `${service.title} | EIB STRATOC`, description: copy.introduction };
+  return { title: `${service.title} | EIB STRATOC`, description: service.description };
 }
 
 export default async function ServiceDetail({ params }: Props) {
@@ -33,9 +32,9 @@ export default async function ServiceDetail({ params }: Props) {
       <header className={styles.hero}>
         <Link className={styles.back} href="/services"><ArrowLeft size={16} aria-hidden="true" />All services</Link>
         <p className={styles.eyebrow}>{copy.eyebrow}</p>
-        <h1>{copy.heading}</h1>
+        <h1>{service.title}</h1>
         <div className={styles.introduction}>
-          <p>{copy.introduction}</p>
+          <p>{service.description}</p>
           <Link className={styles.button} href="/contact">{copy.cta}<ArrowUpRight size={18} aria-hidden="true" /></Link>
         </div>
       </header>

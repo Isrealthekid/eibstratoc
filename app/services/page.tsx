@@ -8,18 +8,10 @@ import styles from "./overview.module.css";
 
 export const metadata: Metadata = {
   title: "Integrated Intelligence Services | EIB STRATOC",
-  description: "Explore intelligence fusion, surveillance, GIS, satellite infrastructure, cybersecurity and operational support from EIB STRATOC.",
+  description: "Explore Intelligent Surveillance, Geospatial Intelligence, Cyber Defense Grid, Satellite Reconnaissance, Predictive Analytics and Command & Control from EIB STRATOC.",
 };
 
 export default function ServicesPage() {
-  const summaries = [
-    "Many sources. One clear picture of what matters.",
-    "Continuous visibility. Connected teams. Coordinated response.",
-    "Connect location, activity and operational context.",
-    "Satellite reach, connected to decisions on the ground.",
-    "Secure infrastructure for sensitive intelligence.",
-    "Intelligence that supports the people in the field.",
-  ];
   const stages = [
     { title: "Collect", copy: "Bring together information from UAV surveillance, satellite imagery, video systems, field reports, intelligence sources and sensor networks." },
     { title: "Validate & Analyse", copy: "Correlate information, identify anomalies and assess threats, risks and operational conditions within the Intelligence Fusion Centre." },
@@ -63,7 +55,7 @@ export default function ServicesPage() {
                 <div className={styles.panelCopy}>
                   <h2 id={`overview-${service.slug}`}><Link href={`/services/${service.slug}`}>{service.title}</Link></h2>
                   <Link href={`/services/${service.slug}`} className={styles.button}>Explore service<ArrowUpRight size={17} aria-hidden="true" /></Link>
-                  <p>{summaries[index]}</p>
+                  <p>{service.description}</p>
                 </div>
                 <Link href={`/services/${service.slug}`} className={styles.panelImage} aria-label={service.linkLabel} tabIndex={-1}>
                   <Image src={service.image} alt={service.imageAlt} fill sizes="(max-width: 767px) 100vw, 45vw" />

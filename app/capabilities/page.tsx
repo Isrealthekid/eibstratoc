@@ -22,7 +22,7 @@ export default function CapabilitiesPage() {
       <div className={styles.content} data-navigation-surface="light">
         <section className={styles.cards} aria-labelledby="explore-capabilities">
           <h2 id="explore-capabilities">Explore Our Capabilities</h2>
-          <StackingCards services={services} basePath="/capabilities" />
+          <StackingCards services={services} />
         </section>
         <section className={styles.stages} aria-labelledby="capability-stages">
           <h2 id="capability-stages">How Our Capabilities Work Together</h2>

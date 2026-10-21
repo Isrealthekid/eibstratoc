@@ -1,52 +1,52 @@
 export const services = [
   {
-    slug: "intelligence-fusion",
-    title: "Intelligence Fusion",
-    description: "Combine satellite imagery, UAV feeds, human reporting, open-source intelligence and sensor data in a secure analytical environment. Identify emerging threats and turn multiple information streams into actionable insight.",
-    linkLabel: "Explore Intelligence Fusion",
-    image: "/assets/services/intelligence-fusion.jpg",
-    imageAlt: "Earth at night photographed from space",
+    "slug": "intelligent-surveillance",
+    "title": "Intelligent Surveillance",
+    "description": "Next-gen CCTV & drone surveillance systems integrated with behavioral analytics for proactive threat detection.",
+    "linkLabel": "Explore Intelligent Surveillance",
+    "image": "/assets/services/surveillance-command.jpg",
+    "imageAlt": "Aerial surveillance drone in flight"
   },
   {
-    slug: "surveillance-command",
-    title: "Surveillance & Command",
-    description: "Connect aerial surveillance, intelligent video, perimeter protection and command systems to support continuous monitoring and coordinated response.",
-    linkLabel: "Explore Surveillance & Command",
-    image: "/assets/services/surveillance-command.jpg",
-    imageAlt: "Aerial surveillance drone in flight",
+    "slug": "geospatial-intelligence",
+    "title": "Geospatial Intelligence",
+    "description": "Advanced GIS mapping and terrain analysis providing tactical situational awareness for complex operations.",
+    "linkLabel": "Explore Geospatial Intelligence",
+    "image": "/assets/services/geospatial-intelligence.jpg",
+    "imageAlt": "City skyline and waterfront infrastructure"
   },
   {
-    slug: "geospatial-intelligence",
-    title: "Geospatial Intelligence",
-    description: "Understand incidents, terrain and resource deployment through interactive Story Maps, live GIS dashboards and detailed topographic mapping.",
-    linkLabel: "Explore Geospatial Intelligence",
-    image: "/assets/services/geospatial-intelligence.jpg",
-    imageAlt: "City skyline and waterfront infrastructure",
+    "slug": "cyber-defense-grid",
+    "title": "Cyber Defense Grid",
+    "description": "Military-grade cybersecurity infrastructure protecting critical national assets from digital warfare and espionage.",
+    "linkLabel": "Explore Cyber Defense Grid",
+    "image": "/assets/services/cybersecurity-data-security.jpg",
+    "imageAlt": "Server racks inside a data centre"
   },
   {
-    slug: "satellite-infrastructure",
-    title: "Satellite Infrastructure",
-    description: "Support real-time data distribution and satellite image acquisition through our satellite teleport in Idu, Abuja, and our Strategic Operations Center.",
-    linkLabel: "Explore Satellite Infrastructure",
-    image: "/assets/services/satellite-infrastructure.jpg",
-    imageAlt: "Earth and its atmosphere photographed from orbit",
+    "slug": "satellite-reconnaissance",
+    "title": "Satellite Reconnaissance",
+    "description": "Real-time high-resolution satellite imagery for border monitoring and asset tracking across the continent.",
+    "linkLabel": "Explore Satellite Reconnaissance",
+    "image": "/assets/services/satellite-infrastructure.jpg",
+    "imageAlt": "Earth and its atmosphere photographed from orbit"
   },
   {
-    slug: "cybersecurity-data-security",
-    title: "Cybersecurity & Data Security",
-    description: "Protect sensitive intelligence through a 200-rack Tier III data centre with integrated cybersecurity systems and digital forensics capabilities.",
-    linkLabel: "Explore Cybersecurity & Data Security",
-    image: "/assets/services/cybersecurity-data-security.jpg",
-    imageAlt: "Server racks inside a data centre",
+    "slug": "predictive-analytics",
+    "title": "Predictive Analytics",
+    "description": "AI-driven data modelling that forecasts security trends and potential breaches before they occur.",
+    "linkLabel": "Explore Predictive Analytics",
+    "image": "/assets/services/intelligence-fusion.jpg",
+    "imageAlt": "Earth at night photographed from space"
   },
   {
-    slug: "operational-support",
-    title: "Operational Support",
-    description: "Support defence, law enforcement and critical infrastructure operations with persistent surveillance, threat analysis, intelligence reporting and mission coordination.",
-    linkLabel: "Explore Operational Support",
-    image: "/assets/services/operational-support.jpg",
-    imageAlt: "Team collaborating in an operations workspace",
-  },
+    "slug": "command-control",
+    "title": "Command & Control",
+    "description": "Centralized fusion centers ensuring seamless communication and coordination during critical missions",
+    "linkLabel": "Explore Command & Control",
+    "image": "/assets/services/operational-support.jpg",
+    "imageAlt": "Team collaborating in an operations workspace"
+  }
 ];
 
 export type Service = (typeof services)[number];

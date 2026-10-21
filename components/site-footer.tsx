@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { services } from "@/lib/services";
 
 export default function SiteFooter() {
   return (
@@ -17,12 +18,9 @@ export default function SiteFooter() {
         </nav>
         <nav className="site-footer-column" aria-label="Footer services navigation">
           <h2>Our services</h2>
-          <Link href="/services/intelligence-fusion">Intelligence fusion</Link>
-          <Link href="/services/surveillance-command">Surveillance &amp; command</Link>
-          <Link href="/services/geospatial-intelligence">Geospatial intelligence</Link>
-          <Link href="/services/satellite-infrastructure">Satellite infrastructure</Link>
-          <Link href="/services/cybersecurity-data-security">Cybersecurity &amp; data security</Link>
-          <Link href="/services/operational-support">Operational support</Link>
+          {services.map((service) => (
+            <Link key={service.slug} href={`/services/${service.slug}`}>{service.title}</Link>
+          ))}
         </nav>
         <div className="site-footer-column">
           <h2>EIB STRATOC</h2>
