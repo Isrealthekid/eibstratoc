@@ -21,7 +21,7 @@ export default function ServicesPage() {
   return (
     <main className={styles.page}>
       <header className={styles.hero}>
-        <Image src="/assets/services/intelligence-fusion.jpg" alt="" fill priority sizes="100vw" className={styles.heroImage} />
+        <Image src="/assets/services/intro-operations.webp" alt="" fill priority sizes="100vw" className={styles.heroImage} />
         <div className={styles.heroLines} aria-hidden="true" />
         <div className={styles.heroContent}>
           <h1>Intelligence.<br />Built for action.</h1>
@@ -32,7 +32,7 @@ export default function ServicesPage() {
 
       <div className={styles.light} data-navigation-surface="light">
         <section className={styles.approach} aria-labelledby="services-approach">
-          <div className={styles.approachImage}><Image src="/assets/services/operational-support.jpg" alt="Team reviewing information and coordinating work" fill sizes="(max-width: 767px) 100vw, 35vw" /></div>
+          <div className={styles.approachImage}><Image src="/assets/services/intro-team.webp" alt="Operations team working at consoles beneath a wall of monitoring screens" fill sizes="(max-width: 767px) 100vw, 35vw" /></div>
           <div className={styles.approachCopy}>
             <p className={styles.eyebrow}>Our approach</p>
             <h2 id="services-approach">Your mission.<br />One connected picture.</h2>

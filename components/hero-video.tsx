@@ -28,7 +28,7 @@ export default function HeroVideo() {
       <video
         ref={video}
         className="hero-video"
-        src="/assets/video/hero.mp4"
+        src="https://bucket.eibstratoc.com/eib-storage/EibWebsitesMedia/%28E%20I%20B%29.mp4"
         poster="/assets/video/hero-poster.jpg"
         muted loop playsInline preload="metadata"
         aria-hidden="true"

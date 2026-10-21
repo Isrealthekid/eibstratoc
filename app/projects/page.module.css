@@ -1,0 +1,32 @@
+.page { background: var(--brand-blue); color: var(--foreground); }
+.hero { min-height: 85svh; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; padding: 11rem var(--page-gutter) 4rem; }
+.eyebrow { margin: 0 0 1.5rem; font-size: .6875rem; letter-spacing: .16em; text-transform: uppercase; }
+.hero h1 { margin: 0; font-size: clamp(3rem, calc(5.5 * var(--type-vw)), 5rem); line-height: .98; font-weight: 400; letter-spacing: -.055em; }
+.introduction { max-width: 52ch; margin: 1.75rem 0 2rem; color: #d4ddec; font-size: 1rem; line-height: 1.7; }
+.heroLink { display: inline-flex; gap: 2rem; font-size: .875rem; padding-bottom: .5rem; border-bottom: .0625rem solid #ffffff55; }
+.catalogue { background: #fff; color: var(--brand-blue); padding: 5rem var(--page-gutter); scroll-margin-top: 6rem; }
+.heading { display: grid; grid-template-columns: 1fr 1fr; align-items: end; gap: 8%; margin-bottom: 3rem; }
+.page h2 { margin: 0; font-size: clamp(2rem, calc(4.5 * var(--type-vw)), 4rem); line-height: 1.05; letter-spacing: -.055em; font-weight: 400; }
+.heading > p { max-width: 42ch; margin: 0; justify-self: end; text-align: right; font-size: .875rem; line-height: 1.7; color: #52637b; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3rem 1.5rem; }
+.card { min-width: 0; background: var(--section-grey); display: flex; flex-direction: column; scroll-margin-top: 7rem; }
+.image { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: #e0e5ec; }
+.image img { object-fit: cover; }
+.copy { display: flex; flex-direction: column; align-items: flex-start; flex: 1; padding: 1.75rem; }
+.category { margin: 0 0 1rem; font-size: .6875rem; letter-spacing: .1em; text-transform: uppercase; color: #52637b; }
+.copy h3 { margin: 0; font-size: 1.75rem; font-weight: 400; line-height: 1.15; letter-spacing: -.04em; }
+.description { margin: 1rem 0 1.5rem; font-size: .875rem; line-height: 1.7; color: #52637b; }
+.link { margin-top: auto; display: inline-flex; align-items: center; gap: 1rem; font-size: .75rem; border-bottom: .0625rem solid #264b8f55; padding-bottom: .5rem; }
+.link svg, .button svg { width: 1.125rem; height: 1.125rem; flex-shrink: 0; }
+.link:hover { color: #102650; }
+.closing { padding: 5rem var(--page-gutter); }
+.closing p { max-width: 50ch; margin: 1.5rem 0 2rem; font-size: .875rem; line-height: 1.7; color: #d4ddec; }
+.button { display: inline-flex; align-items: center; gap: 2rem; padding: 1rem 1.25rem; background: #fff; color: var(--brand-blue); font-size: .875rem; }
+@media (max-width: 767px) {
+  .hero { padding-top: 9rem; min-height: 75svh; }
+  .grid, .heading { grid-template-columns: minmax(0, 1fr); }
+  .heading { gap: 1.5rem; }
+  .heading > p { justify-self: start; text-align: left; }
+  .catalogue, .closing { padding-block: 3rem; }
+  .copy { padding: 1.5rem; }
+}
