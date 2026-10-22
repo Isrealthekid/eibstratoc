@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { projects } from "@/lib/projects";
 import { services } from "@/lib/services";
 import styles from "./page.module.css";
@@ -18,7 +18,7 @@ export default function ProjectsPage() {
         <p className={styles.eyebrow}>Our projects</p>
         <h1>Intelligence<br />in action.</h1>
         <p className={styles.introduction}>From continuous monitoring to dedicated fusion centers, explore our work in critical infrastructure protection and national security.</p>
-        <a className={styles.heroLink} href="#mission-log">Explore our projects <span aria-hidden="true">↓</span></a>
+        <a className={styles.heroLink} href="#mission-log">Explore our projects <ArrowDown className="inline-arrow" aria-hidden="true" /></a>
       </header>
 
       <section id="mission-log" className={styles.catalogue} data-navigation-surface="light" aria-labelledby="mission-log-heading">

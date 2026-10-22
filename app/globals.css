@@ -285,6 +285,8 @@ a:focus-visible {
   outline: 0.125rem solid #d4ddbf;
   outline-offset: 0.5rem;
 }
+.site-footer-column .text-icon-link { display: inline-flex; align-items: center; gap: .4em; }
+.inline-arrow { width: 1.125rem; height: 1.125rem; flex-shrink: 0; }
 .preloader {
   position: fixed;
   inset: 0;

@@ -4,7 +4,7 @@ import { useLayoutEffect, useRef, type CSSProperties } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowDown, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { services } from "@/lib/services";
@@ -130,7 +130,7 @@ export default function ServicesCards() {
       <div className="services-track">
       <div className="services-stage">
       <div className="services-grid">
-        <header className="services-intro"><p>OUR CAPABILITIES</p><h1>Intelligence <br />in action.</h1><span>Six capabilities.<br />One connected picture.</span><div className="services-scroll">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></div></header>
+        <header className="services-intro"><p>OUR CAPABILITIES</p><h1>Intelligence <br />in action.</h1><span>Six capabilities.<br />One connected picture.</span><div className="services-scroll">SCROLL TO EXPLORE <ArrowDown className="inline-arrow" aria-hidden="true" /></div></header>
         {services.map((service, index) => <ServiceCard key={service.title} index={index} />)}
       </div>
       <div className="services-progress" aria-hidden="true"><span className="services-progress-fill" /></div>

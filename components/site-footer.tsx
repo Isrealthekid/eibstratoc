@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 import { services } from "@/lib/services";
 
 export default function SiteFooter() {
@@ -8,7 +9,7 @@ export default function SiteFooter() {
         <div className="site-footer-column">
           <h2>Connect</h2>
           <a href="mailto:info@eibstratoc.com">info@eibstratoc.com</a>
-          <a href="#site-content">Back to top ↗</a>
+          <a href="#site-content" className="text-icon-link">Back to top <ArrowUpRight className="inline-arrow" aria-hidden="true" /></a>
         </div>
         <nav className="site-footer-column" aria-label="Footer company navigation">
           <h2>Company</h2>
