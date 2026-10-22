@@ -1,10 +1,35 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { services } from "@/lib/services";
+import Topography from "@/components/Topography";
 
 export default function SiteFooter() {
   return (
     <footer className="site-footer" aria-label="Site footer">
+      <div className="site-footer-background" aria-hidden="true">
+        <Topography
+          color="#3b82f6"
+          lineCount={35}
+          lineWidth={0.8}
+          elevation={0.9}
+          foreground={0.34}
+          tilt={38}
+          speed={0.25}
+          direction="forward"
+          glow={0.15}
+          depthOfField={0.25}
+          fog={0.35}
+          hoverEffect="lift"
+          clickEffect="pulse"
+          scale={0.85}
+          detail={0.96}
+          morph={0.18}
+          brightness={0.2}
+          mouseStrength={0.45}
+          trail={0.21}
+          dpr={1.5}
+        />
+      </div>
       <div className="site-footer-columns">
         <div className="site-footer-column">
           <h2>Connect</h2>
